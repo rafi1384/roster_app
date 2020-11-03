@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Allocation" max_length="40" name="x_isgi_roster_allocation" type="collection">
+        <element label="Actual Fixed Seats" max_length="40" name="actual_fixed_seats" read_only="true" type="integer"/>
+        <element label="Actual Shared Seats" max_length="40" name="actual_shared_seats" read_only="true" type="integer"/>
+        <element label="Counter" max_length="250" name="counter" read_only="true" type="string"/>
+        <element label="Fixed Seats" max_length="40" name="fixed_seats" type="integer"/>
+        <element label="Fixed Seat Fill %" max_length="40" name="fixed_seat_fill_per" read_only="true" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Date Month" mandatory="true" max_length="40" name="month" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Month" max_length="40" name="month_value" read_only="true" type="string"/>
+        <element label="Total Seat Fill %" max_length="40" name="seat_fill_per" read_only="true" type="integer"/>
+        <element label="Shared Seats" max_length="40" name="shared_seats" type="integer"/>
+        <element label="Shared Seat Fill %" max_length="40" name="shared_seat_fill_per" read_only="true" type="integer"/>
+        <element label="SLC" max_length="32" name="slc" reference="sys_user" type="reference"/>
+        <element label="Total Actual Seats" max_length="40" name="total_actual_seats" read_only="true" type="integer"/>
+        <element label="Total Budget Seats" max_length="40" name="total_budget_seats" read_only="true" type="integer"/>
+        <index name="index">
+            <element name="slc"/>
+        </index>
+    </element>
+</database>

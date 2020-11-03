@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups">
+    <sys_report_users_groups action="INSERT_OR_UPDATE">
+        <group_id display_value="Admin" name="Admin">a7fa75fcdb29d70022083b4ffe961955</group_id>
+        <report_id display_value="Roster - Calendar">114ab9f11bf39c149d4e6392f54bcb9a</report_id>
+        <sys_class_name>sys_report_users_groups</sys_class_name>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-10-12 12:28:39</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6d4ab9f11bf39c149d4e6392f54bcba3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>114ab9f11bf39c149d4e6392f54bcb9a</sys_name>
+        <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
+        <sys_update_name>sys_report_users_groups_6d4ab9f11bf39c149d4e6392f54bcba3</sys_update_name>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-10-12 12:28:39</sys_updated_on>
+        <user_id/>
+    </sys_report_users_groups>
+</record_update>

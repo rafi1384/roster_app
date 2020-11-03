@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="ieb" table="x_isgi_roster_plan" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>ieb</element>
+            <name>x_isgi_roster_plan</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+            <sys_created_on>2020-10-20 12:33:45</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>d9126df81b986410af1ef436464bcb7e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>ieb</sys_name>
+            <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
+            <sys_update_name>sys_choice_x_isgi_roster_plan_ieb</sys_update_name>
+            <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+            <sys_updated_on>2020-10-20 12:33:45</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>ieb</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>GovernX</label>
+            <language>en</language>
+            <name>x_isgi_roster_plan</name>
+            <sequence>0</sequence>
+            <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+            <sys_created_on>2020-10-20 12:33:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>062803181bc46c549d4e6392f54bcb5b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+            <sys_updated_on>2020-10-20 12:33:45</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>ieb</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Americas</label>
+            <language>en</language>
+            <name>x_isgi_roster_plan</name>
+            <sequence>1</sequence>
+            <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+            <sys_created_on>2020-10-20 12:33:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4a2803181bc46c549d4e6392f54bcb5c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+            <sys_updated_on>2020-10-20 12:33:45</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>ieb</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Research</label>
+            <language>en</language>
+            <name>x_isgi_roster_plan</name>
+            <sequence>2</sequence>
+            <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+            <sys_created_on>2020-10-20 12:33:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4a2803181bc46c549d4e6392f54bcb5d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+            <sys_updated_on>2020-10-20 12:33:45</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>ieb</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Automation</label>
+            <language>en</language>
+            <name>x_isgi_roster_plan</name>
+            <sequence>3</sequence>
+            <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+            <sys_created_on>2020-10-20 12:33:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4a2803181bc46c549d4e6392f54bcb5e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+            <sys_updated_on>2020-10-20 12:33:45</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>ieb</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>NaSa</label>
+            <language>en</language>
+            <name>x_isgi_roster_plan</name>
+            <sequence>4</sequence>
+            <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+            <sys_created_on>2020-10-20 12:33:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4a2803181bc46c549d4e6392f54bcb5f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+            <sys_updated_on>2020-10-20 12:33:45</sys_updated_on>
+            <value>5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>ieb</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>One Platform:Glob Mark</label>
+            <language>en</language>
+            <name>x_isgi_roster_plan</name>
+            <sequence>5</sequence>
+            <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+            <sys_created_on>2020-10-20 12:33:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4a2803181bc46c549d4e6392f54bcb60</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+            <sys_updated_on>2020-10-20 12:33:45</sys_updated_on>
+            <value>One Platform:Glob Mark</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>ieb</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>One Platform:Finance</label>
+            <language>en</language>
+            <name>x_isgi_roster_plan</name>
+            <sequence>7</sequence>
+            <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+            <sys_created_on>2020-10-20 12:33:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4a2803181bc46c549d4e6392f54bcb61</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+            <sys_updated_on>2020-10-20 12:33:45</sys_updated_on>
+            <value>One Platform:Finance</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>ieb</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>SEMEA</label>
+            <language>en</language>
+            <name>x_isgi_roster_plan</name>
+            <sequence>10</sequence>
+            <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+            <sys_created_on>2020-10-20 12:33:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4a2803181bc46c549d4e6392f54bcb62</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+            <sys_updated_on>2020-10-20 12:33:45</sys_updated_on>
+            <value>8</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>ieb</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>One Platform:HR</label>
+            <language>en</language>
+            <name>x_isgi_roster_plan</name>
+            <sequence>11</sequence>
+            <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+            <sys_created_on>2020-10-20 12:33:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4a2803181bc46c549d4e6392f54bcb63</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+            <sys_updated_on>2020-10-20 12:33:45</sys_updated_on>
+            <value>9</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>ieb</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Asia</label>
+            <language>en</language>
+            <name>x_isgi_roster_plan</name>
+            <sequence>12</sequence>
+            <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+            <sys_created_on>2020-10-20 12:33:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4a2803181bc46c549d4e6392f54bcb64</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+            <sys_updated_on>2020-10-20 12:33:45</sys_updated_on>
+            <value>10</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>ieb</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>One Platform:India ASC</label>
+            <language>en</language>
+            <name>x_isgi_roster_plan</name>
+            <sequence>13</sequence>
+            <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+            <sys_created_on>2020-10-20 12:33:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4a2803181bc46c549d4e6392f54bcb65</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+            <sys_updated_on>2020-10-20 12:33:45</sys_updated_on>
+            <value>11</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

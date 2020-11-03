@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Roster Plan" max_length="40" name="x_isgi_roster_plan" type="collection">
+        <element attributes="encode_utf8=false" default="javascript:gs.getUserID()" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Created by" max_length="32" name="created_by" read_only="true" reference="sys_user" type="reference" use_dynamic_default="true"/>
+        <element attributes="encode_utf8=false" label="Created by Manager" max_length="32" name="created_by_manager" read_only="true" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Days" max_length="40" name="days" read_only="true" type="string"/>
+        <element attributes="encode_utf8=false" label="Department" max_length="32" name="department" read_only="true" reference="cmn_department" type="reference"/>
+        <element label="Duration" max_length="40" name="duration" read_only="true" type="glide_duration"/>
+        <element label="Email ID" max_length="40" name="email_id" read_only="true" type="email"/>
+        <element attributes="edge_encryption_enabled=true" label="Emp ID" max_length="100" name="emp_id" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Roster End Date" max_length="40" name="end_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="IEB" max_length="40" name="ieb" read_only="true" type="string">
+            <choice>
+                <element inactive_on_update="false" label="GovernX" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Americas" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Research" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="Automation" sequence="3" value="4"/>
+                <element inactive_on_update="false" label="NaSa" sequence="4" value="5"/>
+                <element inactive_on_update="false" label="One Platform:Glob Mark" sequence="5" value="One Platform:Glob Mark"/>
+                <element inactive_on_update="false" label="One Platform:Finance" sequence="7" value="One Platform:Finance"/>
+                <element inactive_on_update="false" label="SEMEA" sequence="10" value="8"/>
+                <element inactive_on_update="false" label="One Platform:HR" sequence="11" value="9"/>
+                <element inactive_on_update="false" label="Asia" sequence="12" value="10"/>
+                <element inactive_on_update="false" label="One Platform:India ASC" sequence="13" value="11"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Employee Manager" max_length="32" name="manager" read_only="true" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Month" max_length="40" name="month" read_only="true" type="string"/>
+        <element attributes="encode_utf8=false" label="Name" mandatory="true" max_length="32" name="name" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Roster Start Date" max_length="40" name="roster_start_date" type="glide_date"/>
+        <element attributes="encode_utf8=false" label="SLC" max_length="32" name="slc" read_only="true" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Team Name" mandatory="true" max_length="100" name="team_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Type" max_length="40" name="type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Fixed Seat" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Shared Seat" sequence="1" value="2"/>
+                <element inactive="true" inactive_on_update="true" label="Flexi" sequence="2" value="3"/>
+                <element inactive="true" inactive_on_update="true" label="Not Applicable" sequence="3" value="4"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="1" label="Workflow State" max_length="100" name="workflow_state" read_only="true" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Draft" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="Pending Approval" sequence="2" value="2"/>
+                <element inactive_on_update="false" label="Approved" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="Rejected" sequence="4" value="4"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="manager"/>
+        </index>
+        <index name="index2">
+            <element name="name"/>
+        </index>
+        <index name="index3">
+            <element name="slc"/>
+        </index>
+        <index name="index4">
+            <element name="department"/>
+        </index>
+        <index name="index5">
+            <element name="created_by"/>
+        </index>
+        <index name="index6">
+            <element name="created_by_manager"/>
+        </index>
+    </element>
+</database>

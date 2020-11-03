@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on x_isgi_roster_allocation</description>
+        <name>x_isgi_roster_allocation</name>
+        <operation display_value="read">read</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-10-27 08:10:42</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>091f822e1bc4a8949d4e6392f54bcb13</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_isgi_roster_allocation</sys_name>
+        <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
+        <sys_update_name>sys_security_acl_091f822e1bc4a8949d4e6392f54bcb13</sys_update_name>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-10-27 08:10:42</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</application>
+        <file_path/>
+        <instance_id>69a78f219b99cb447ac36b8af359ff47</instance_id>
+        <instance_name>isggoverndev4</instance_name>
+        <name>sys_security_acl_091f822e1bc4a8949d4e6392f54bcb13</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on x_isgi_roster_allocation</description><name>x_isgi_roster_allocation</name><operation display_value="read">read</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by><sys_created_on>2020-10-27 08:10:42</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>091f822e1bc4a8949d4e6392f54bcb13</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_isgi_roster_allocation</sys_name><sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope><sys_update_name>sys_security_acl_091f822e1bc4a8949d4e6392f54bcb13</sys_update_name><sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by><sys_updated_on>2020-10-27 08:10:42</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>-1896408409</payload_hash>
+        <record_name>x_isgi_roster_allocation</record_name>
+        <reverted_from/>
+        <source>b344a5b11b739c149d4e6392f54bcbc2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-10-27 08:10:42</sys_created_on>
+        <sys_id>891f822e1bc4a8949d4e6392f54bcb3c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>175691bf9e50000001</sys_recorded_at>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-10-27 08:10:42</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>811f822e4ac4a89413312890d993ad3c</update_guid>
+        <update_guid_history>811f822e4ac4a89413312890d993ad3c:-1896408409</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-11-03 03:58:06</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>ab1554fae4144b76a0c3e0698e66bca4</sys_id>
+        <sys_metadata>091f822e1bc4a8949d4e6392f54bcb13</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_isgi_roster_allocation</sys_name>
+        <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
+        <sys_parent display_value="">8e0cb3201b04ec549d4e6392f54bcb0d</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
+        <sys_scope_delete display_value="">94aba01e32774c00ad01831d23410000</sys_scope_delete>
+        <sys_update_name>sys_security_acl_091f822e1bc4a8949d4e6392f54bcb13</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_091f822e1bc4a8949d4e6392f54bcb13">891f822e1bc4a8949d4e6392f54bcb3c</sys_update_version>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-11-03 03:58:06</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

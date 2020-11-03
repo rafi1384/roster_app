@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Roster">40d5a1fd1b339c149d4e6392f54bcbc1</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>DIRECT</link_type>
+        <map_page/>
+        <mobile_title>Calendar View</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name/>
+        <order>5</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query>$pa_dashboard.do?sysparm_dashboard=2c9bf5751bf39c149d4e6392f54bcb9d&amp;sysparm_tab=4f9b39751bf39c149d4e6392f54bcb18&amp;sysparm_cancelable=true&amp;sysparm_editable=true&amp;sysparm_active_panel=quickLayoutSideContent</query>
+        <report/>
+        <roles>x_isgi_roster.employee,x_isgi_roster.admin,x_isgi_roster.manager,x_isgi_roster.slc</roles>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-10-12 12:31:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b77a71351bf39c149d4e6392f54bcb54</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Calendar View</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
+        <sys_update_name>sys_app_module_b77a71351bf39c149d4e6392f54bcb54</sys_update_name>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-10-20 10:50:40</sys_updated_on>
+        <timeline_page/>
+        <title>Calendar View</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</application>
+        <file_path/>
+        <instance_id>69a78f219b99cb447ac36b8af359ff47</instance_id>
+        <instance_name>isggoverndev4</instance_name>
+        <name>sys_app_module_b77a71351bf39c149d4e6392f54bcb54</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Roster">40d5a1fd1b339c149d4e6392f54bcbc1</application><assessment/><content_page/><device_type/><filter/><hint/><homepage/><image/><link_type>DIRECT</link_type><map_page/><mobile_title>Calendar View</mobile_title><mobile_view_name>Mobile</mobile_view_name><name/><order>5</order><override_menu_roles>false</override_menu_roles><query>$pa_dashboard.do?sysparm_dashboard=2c9bf5751bf39c149d4e6392f54bcb9d&amp;sysparm_tab=4f9b39751bf39c149d4e6392f54bcb18&amp;sysparm_cancelable=true&amp;sysparm_editable=true&amp;sysparm_active_panel=quickLayoutSideContent</query><report/><roles>x_isgi_roster.employee,x_isgi_roster.admin,x_isgi_roster.manager,x_isgi_roster.slc</roles><survey/><survey_overwrite>true</survey_overwrite><sys_class_name>sys_app_module</sys_class_name><sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by><sys_created_on>2020-10-12 12:31:20</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>b77a71351bf39c149d4e6392f54bcb54</sys_id><sys_mod_count>4</sys_mod_count><sys_name>Calendar View</sys_name><sys_overrides/><sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope><sys_update_name>sys_app_module_b77a71351bf39c149d4e6392f54bcb54</sys_update_name><sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by><sys_updated_on>2020-10-20 10:50:40</sys_updated_on><timeline_page/><title>Calendar View</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-2011878467</payload_hash>
+        <record_name>Calendar View</record_name>
+        <reverted_from/>
+        <source>b344a5b11b739c149d4e6392f54bcbc2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-10-20 10:50:40</sys_created_on>
+        <sys_id>1490fa901b446c549d4e6392f54bcbac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17545a1eaa40000001</sys_recorded_at>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-10-20 10:50:40</sys_updated_on>
+        <type>Module</type>
+        <update_guid>d890fa9035446c54769320b7466a56ab</update_guid>
+        <update_guid_history>d890fa9035446c54769320b7466a56ab:-2011878467,145f629c68046c54e3d6b73c27e27299:-1156054577,703c3db59bf39c14a9d64ed6bf7ea882:227329712,117bf175e8f39c1448122b5bdb6cf05f:1251450107,f0ea3135dff39c14ae4a057d8d2ed48a:-431734247</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 03-Nov-2020 10.01.26 AM">290029741b986410af1ef436464bcb32</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-11-03 04:31:26</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>00dff7edea064104835d90c282c11764</sys_id>
+        <sys_metadata>b77a71351bf39c149d4e6392f54bcb54</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Calendar View</sys_name>
+        <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
+        <sys_scope_delete display_value="">94aba01e32774c00ad01831d23410000</sys_scope_delete>
+        <sys_update_name>sys_app_module_b77a71351bf39c149d4e6392f54bcb54</sys_update_name>
+        <sys_update_version display_value="sys_app_module_b77a71351bf39c149d4e6392f54bcb54">1490fa901b446c549d4e6392f54bcbac</sys_update_version>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-11-03 04:31:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

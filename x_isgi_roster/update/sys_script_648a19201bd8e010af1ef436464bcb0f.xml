@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_isgi_roster_allocation</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Update Aggregation</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/){
+
+getFixedSeats();	
+getSharedSeats();
+	
+function getFixedSeats(){
+var gr = new GlideRecord('x_isgi_roster_plan');
+gr.addQuery('slc',current.slc);
+gr.addQuery('month',current.month_value);
+gr.addQuery('type','1');
+gr.addQuery('workflow_state','3');
+gr.query();
+var Fixed = gr.getRowCount();
+//gs.addInfoMessage(Fixed);
+current.actual_fixed_seats=Fixed;	
+}	
+	
+function getSharedSeats(){
+var gr = new GlideRecord('x_isgi_roster_plan');
+gr.addQuery('slc',current.slc);
+gr.addQuery('month',current.month_value);
+gr.addQuery('type','2');
+gr.addQuery('workflow_state','3');	
+gr.query();
+var Shared = gr.getRowCount();
+//gs.addInfoMessage(Shared);
+current.actual_shared_seats=Shared;	
+}		
+
+
+current.total_budget_seats=totalbudget;	
+var FixedValue = current.actual_fixed_seats;
+var SharedValue = current.actual_shared_seats;
+var total = FixedValue+SharedValue;
+current.total_actual_seats=total;
+var FixedBudget = current.fixed_seats;
+var SharedBudget = current.shared_seats;
+var TotalBudgetSeats=FixedBudget+SharedBudget;	
+current.total_budget_seats=TotalBudgetSeats;	
+var Fixed_fill = (FixedValue/FixedBudget)*100;
+var Shared_fill = (SharedValue/SharedBudget)*100;
+current.fixed_seat_fill_per=Fixed_fill;
+current.shared_seat_fill_per=Shared_fill;
+var totalbudget =current.total_budget_seats;
+var totalactual = current.total_actual_seats;
+var totalseatfill = (totalactual/totalbudget)*100;
+current.seat_fill_per=totalseatfill;	
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-11-02 09:33:26</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>648a19201bd8e010af1ef436464bcb0f</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>Update Aggregation</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
+        <sys_update_name>sys_script_648a19201bd8e010af1ef436464bcb0f</sys_update_name>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-11-02 13:04:50</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=648a19201bd8e010af1ef436464bcb0f"/>
+</record_update>

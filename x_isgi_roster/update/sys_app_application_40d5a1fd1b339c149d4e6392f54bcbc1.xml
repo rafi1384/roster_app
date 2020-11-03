@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category display_value="">Custom Applications</category>
+        <description>Internal Roster Application @ ISG</description>
+        <device_type>browser</device_type>
+        <hint>Internal Roster Application</hint>
+        <name/>
+        <order/>
+        <roles>x_isgi_roster.employee,x_isgi_roster.admin,x_isgi_roster.calendar_user,x_isgi_roster.manager,x_isgi_roster.slc</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-10-12 10:59:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>40d5a1fd1b339c149d4e6392f54bcbc1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Roster</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
+        <sys_update_name>sys_app_application_40d5a1fd1b339c149d4e6392f54bcbc1</sys_update_name>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-10-20 10:45:40</sys_updated_on>
+        <title>Roster</title>
+        <view_name/>
+    </sys_app_application>
+</record_update>
