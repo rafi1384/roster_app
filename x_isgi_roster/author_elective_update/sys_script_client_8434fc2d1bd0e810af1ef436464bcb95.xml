@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>sys_created_on</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>End Date Validation</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+	if (isLoading || newValue === '') {
+		return;
+	}
+	if (newValue!='' && g_form.getValue('roster_start_date')!=''){
+		var gets = new GlideAjax('CompareDates');
+		gets.addParam('sysparm_name','getDValue');
+		gets.addParam('startdate', g_form.getValue('roster_start_date'));
+		gets.addParam('enddate', newValue);
+		gets.getXMLAnswer(CompareDates);
+	}
+
+	function CompareDates(response){		
+		var dateObject=JSON.parse(response);
+
+		if (dateObject.end_date<dateObject.start_date){
+			g_form.clearValue('end_date');
+			g_form.addErrorMessage('End Date should be greater than Start Date.');
+			g_form.getControl('end_date').focus();
+		}
+
+	}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-11-05 09:16:23</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>8434fc2d1bd0e810af1ef436464bcb95</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>End Date Validation</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
+        <sys_update_name>sys_script_client_8434fc2d1bd0e810af1ef436464bcb95</sys_update_name>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-11-05 09:16:23</sys_updated_on>
+        <table>x_isgi_roster_plan</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</application>
+        <file_path/>
+        <instance_id>69a78f219b99cb447ac36b8af359ff47</instance_id>
+        <instance_name>isggoverndev4</instance_name>
+        <name>sys_script_client_8434fc2d1bd0e810af1ef436464bcb95</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;sys_created_on&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;End Date Validation&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+	if (isLoading || newValue === '') {
+		return;
+	}
+	if (newValue!='' &amp;&amp; g_form.getValue('roster_start_date')!=''){
+		var gets = new GlideAjax('CompareDates');
+		gets.addParam('sysparm_name','getDValue');
+		gets.addParam('startdate', g_form.getValue('roster_start_date'));
+		gets.addParam('enddate', newValue);
+		gets.getXMLAnswer(CompareDates);
+	}
+
+	function CompareDates(response){		
+		var dateObject=JSON.parse(response);
+
+		if (dateObject.end_date&lt;dateObject.start_date){
+			g_form.clearValue('end_date');
+			g_form.addErrorMessage('End Date should be greater than Start Date.');
+			g_form.getControl('end_date').focus();
+		}
+
+	}
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;mohamed.rafiulla@isg-one.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-05 09:16:23&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path/&gt;&lt;sys_id&gt;8434fc2d1bd0e810af1ef436464bcb95&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;End Date Validation&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="roster" source="x_isgi_roster"&gt;3f44a5b11b739c149d4e6392f54bcbbf&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="roster"&gt;3f44a5b11b739c149d4e6392f54bcbbf&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_8434fc2d1bd0e810af1ef436464bcb95&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;mohamed.rafiulla@isg-one.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-05 09:16:23&lt;/sys_updated_on&gt;&lt;table&gt;x_isgi_roster_plan&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1182888758</payload_hash>
+        <record_name>End Date Validation</record_name>
+        <reverted_from/>
+        <source>c2cd25bc1bd86410af1ef436464bcb43</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-11-05 09:16:23</sys_created_on>
+        <sys_id>5364fc2d1bd0e810af1ef436464bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17597b1587c0000001</sys_recorded_at>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-11-05 09:16:23</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>5b64fc2d37d0e8105d3dbce03513439d</update_guid>
+        <update_guid_history>5b64fc2d37d0e8105d3dbce03513439d:-1182888758</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-11-05 09:32:43</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>629f14d0d1644c188e4620202bbcbca4</sys_id>
+        <sys_metadata>8434fc2d1bd0e810af1ef436464bcb95</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>End Date Validation</sys_name>
+        <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
+        <sys_parent display_value="Roster Plan">6c5521351b739c149d4e6392f54bcbc1</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
+        <sys_scope_delete display_value="">94aba01e32774c00ad01831d23410000</sys_scope_delete>
+        <sys_update_name>sys_script_client_8434fc2d1bd0e810af1ef436464bcb95</sys_update_name>
+        <sys_update_version display_value="sys_script_client_8434fc2d1bd0e810af1ef436464bcb95">5364fc2d1bd0e810af1ef436464bcb9e</sys_update_version>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-11-05 09:32:43</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

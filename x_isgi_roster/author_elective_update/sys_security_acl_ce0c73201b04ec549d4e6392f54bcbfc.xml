@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on x_isgi_roster_allocation</description>
+        <name>x_isgi_roster_allocation</name>
+        <operation display_value="write">write</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-10-21 10:58:52</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ce0c73201b04ec549d4e6392f54bcbfc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_isgi_roster_allocation</sys_name>
+        <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
+        <sys_update_name>sys_security_acl_ce0c73201b04ec549d4e6392f54bcbfc</sys_update_name>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-10-21 10:58:52</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</application>
+        <file_path/>
+        <instance_id>69a78f219b99cb447ac36b8af359ff47</instance_id>
+        <instance_name>isggoverndev4</instance_name>
+        <name>sys_security_acl_ce0c73201b04ec549d4e6392f54bcbfc</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on x_isgi_roster_allocation</description>
+        <name>x_isgi_roster_allocation</name>
+        <operation display_value="write">write</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-10-21 10:58:52</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ce0c73201b04ec549d4e6392f54bcbfc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_isgi_roster_allocation</sys_name>
+        <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
+        <sys_update_name>sys_security_acl_ce0c73201b04ec549d4e6392f54bcbfc</sys_update_name>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-10-21 10:58:52</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>]]></payload>
+        <payload_hash>1147053857</payload_hash>
+        <record_name>x_isgi_roster_allocation</record_name>
+        <reverted_from/>
+        <source>509da5f01b1c6410af1ef436464bcb09</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-11-03 05:31:18</sys_created_on>
+        <sys_id>26bd29341b1c6410af1ef436464bcbe6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1758c968f0a0000001</sys_recorded_at>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-11-03 05:31:18</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>62bd2934751c64106fbe4cf908a1a7e6</update_guid>
+        <update_guid_history>62bd2934751c64106fbe4cf908a1a7e6:0,209da5f08f1c6410616830d423c04e9d:201565023,5022a13c749864108918e4e5a464862b:0,06f1e1f87898641018f4f13d66270f19:201565023,16b1e1b86e986410f5a8b949717d6fa6:0,7e81ad38ce986410fa2ccff2a3444fe2:201565023,060cb3206904ec54b1426b612cb87800:424588523</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-11-05 09:47:55</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>03254ab21207494890982cbdead98464</sys_id>
+        <sys_metadata>ce0c73201b04ec549d4e6392f54bcbfc</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_isgi_roster_allocation</sys_name>
+        <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
+        <sys_parent display_value="x_isgi_roster_allocation">ccbde1341b1c6410af1ef436464bcbd4</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
+        <sys_scope_delete display_value="">94aba01e32774c00ad01831d23410000</sys_scope_delete>
+        <sys_update_name>sys_security_acl_ce0c73201b04ec549d4e6392f54bcbfc</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_ce0c73201b04ec549d4e6392f54bcbfc">26bd29341b1c6410af1ef436464bcbe6</sys_update_version>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-11-05 09:47:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

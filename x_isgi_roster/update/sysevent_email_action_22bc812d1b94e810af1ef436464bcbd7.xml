@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>false</action_insert>
+        <action_update>true</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
+        <collection>x_isgi_roster_plan</collection>
+        <condition table="x_isgi_roster_plan">workflow_stateCHANGESFROM2^workflow_stateCHANGESTO4^EQ<item display_value="Pending Approval" endquery="false" field="workflow_state" goto="false" newquery="false" operator="CHANGESFROM" or="false" value="2"/>
+            <item display_value="Rejected" endquery="false" field="workflow_state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="4"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <content_type>text/html</content_type>
+        <default_interval/>
+        <description/>
+        <digest_from/>
+        <digest_html/>
+        <digest_reply_to/>
+        <digest_separator_html><![CDATA[<p>&nbsp;</p>
+<hr />
+<p>&nbsp;</p>]]></digest_separator_html>
+        <digest_separator_text><![CDATA[\n--------------------------------------------------------------------------------\n]]></digest_separator_text>
+        <digest_subject/>
+        <digest_template/>
+        <digest_text/>
+        <digestable>false</digestable>
+        <event_name>antivirus.infected</event_name>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>engine</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<center>
+<table style="border-collapse: collapse; font-family: 'Montserrat', sans-serif;">
+<tbody>
+<tr>
+<td style="padding: 20px; border: 1px solid black;">
+<table>
+<tbody>
+<tr>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><hr style="height: 1px; color: #225281; background-color: #225281; border: none;" /></td>
+</tr>
+<tr>
+<td style="border-top: 6px solid #fff;">
+<p style="background: #225281; color: #fff; border: 5px solid #225281; font-size: 14px; margin: 0px;"><span style="color: #fbfbfb; font-family: verdana, geneva; font-size: 10pt;">${workflow_state}</span></p>
+</td>
+</tr>
+<tr>
+<td style="border-top: 6px solid #fff; border-bottom: 6px solid #fff;">
+<div><span style="font-size: 10pt; font-family: verdana, geneva;">&nbsp;</span></div>
+<div><span style="font-size: 10pt; font-family: verdana, geneva;">Roster request has been rejected. Please take neccassary action.</span></div>
+</td>
+</tr>
+<tr>
+<td>
+<table style="border-collapse: collapse; border: 1px solid black; width: 100%;" cellpadding="10">
+<tbody>
+<tr>
+<td style="border: 1px solid #225281; width: 99.8028%;" colspan="2">
+<p style="border-top: 8px solid #FFF; border-bottom: 5px solid #FFF; margin: 0px 10px 0px 10px; color: #225281; font-size: 14px; font-weight: bold;"><span style="font-family: verdana, geneva; font-size: 10pt;">ROSTER DETAILS</span></p>
+</td>
+</tr>
+<tr>
+<td style="border: 1px solid #225281; width: 43.8028%;">
+<p style="border-top: 8px solid #FFF; border-bottom: 5px solid #FFF; margin: 0px 10px 0px 10px; color: #000; font-size: 13px; font-weight: bold;"><span style="font-family: verdana, geneva; font-size: 10pt;">Name</span></p>
+</td>
+<td style="border: 1px solid #225281; width: 43.8028%;">
+<p style="border-top: 8px solid #FFF; border-bottom: 5px solid #FFF; margin: 0px 10px 0px 10px; color: #433f40; font-size: 13px;"><span style="font-family: verdana, geneva; font-size: 10pt;">${name}<br /></span></p>
+</td>
+</tr>
+<tr>
+<td style="border: 1px solid #225281; width: 43.8028%;">
+<p style="border-top: 8px solid #FFF; border-bottom: 5px solid #FFF; margin: 0px 10px 0px 10px; color: #000; font-size: 13px; font-weight: bold;"><span style="font-family: verdana, geneva; font-size: 10pt;">Emp ID</span></p>
+</td>
+<td style="border: 1px solid #225281; width: 43.8028%;">
+<p style="border-top: 8px solid #FFF; border-bottom: 5px solid #FFF; margin: 0px 10px 0px 10px; color: #433f40; font-size: 13px;"><span style="font-family: verdana, geneva; font-size: 10pt;">${emp_id}<br /></span></p>
+</td>
+</tr>
+<tr>
+<td style="border: 1px solid #225281; width: 43.8028%;">
+<p style="border-top: 8px solid #FFF; border-bottom: 5px solid #FFF; margin: 0px 10px 0px 10px; color: #000; font-size: 13px; font-weight: bold;"><span style="font-family: verdana, geneva; font-size: 10pt;">Month</span></p>
+</td>
+<td style="border: 1px solid #225281; width: 43.8028%;">
+<p style="border-top: 8px solid #FFF; border-bottom: 5px solid #FFF; margin: 0px 10px 0px 10px; color: #433f40; font-size: 13px;"><span style="font-family: verdana, geneva; font-size: 10pt;">${month}<br /></span></p>
+</td>
+</tr>
+<tr>
+<td style="border: 1px solid #225281; width: 43.8028%;">
+<p style="border-top: 8px solid #FFF; border-bottom: 5px solid #FFF; margin: 0px 10px 0px 10px; color: #000; font-size: 13px; font-weight: bold;"><span style="font-family: verdana, geneva; font-size: 10pt;">Reporting Manager</span></p>
+</td>
+<td style="border: 1px solid #225281; width: 43.8028%;">
+<p style="border-top: 8px solid #FFF; border-bottom: 5px solid #FFF; margin: 0px 10px 0px 10px; color: #433f40; font-size: 13px;"><span style="font-family: verdana, geneva; font-size: 10pt;"><span style="color: #433f40; font-family: verdana, geneva;">${manager}</span><br /></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><span style="font-family: verdana, geneva; font-size: 10pt;">&nbsp;</span></td>
+</tr>
+<tr>
+<td>
+<table style="width: fit-content;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="background: #FFF; padding: 0pt;">
+<p style="text-align: left; background: #FFF; font-size: 14px; border: 1px solid #FFF; padding: 4px 0px; color: #000; margin-top: 8pt; margin-bottom: 0pt; width: fit-content;" align="left"><span style="color: #000000; font-family: verdana, geneva; font-size: 10pt;">Take me to the request ${mail_script:roster_id}</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<div><span style="font-family: verdana, geneva; font-size: 10pt;">&nbsp;</span></div>
+<div><span style="font-size: 10pt; font-family: verdana, geneva;">You may reply to this email to communicate any relevant or requested information. Your email response along with any attachments will be stored in ISG GovernX under the Activity Log</span></div>
+<div><span style="font-family: verdana, geneva; font-size: 10pt;">&nbsp;</span></div>
+<div><span style="font-size: 10pt; font-family: verdana, geneva;">Regards,<br />ISG Support Team</span></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<div style="border-top: 5px solid #fff;"><span style="font-size: 8pt; font-family: verdana, geneva;"><span style="color: #767171;">Confidentiality note: The above email contains information that is confidential and/or privileged. The information is for the use of the individual or entity originally intended. If you are not the intended recipient, be aware that any disclosure, copying, distribution or use of this information is prohibited.</span></span></div>
+</td>
+</tr>
+</tbody>
+</table>
+</center>
+<p>&nbsp;</p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>Roster Rejected</name>
+        <omit_watermark>false</omit_watermark>
+        <order>300</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields>name,slc</recipient_fields>
+        <recipient_groups/>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>true</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject>Roster request has been approved by ${manager} for the month of ${month}</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-11-05 11:02:33</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>22bc812d1b94e810af1ef436464bcbd7</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Roster Rejected</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
+        <sys_update_name>sysevent_email_action_22bc812d1b94e810af1ef436464bcbd7</sys_update_name>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-11-05 11:14:46</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+</record_update>

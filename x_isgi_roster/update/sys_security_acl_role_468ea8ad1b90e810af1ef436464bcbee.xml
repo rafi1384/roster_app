@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-11-05 08:50:47</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>468ea8ad1b90e810af1ef436464bcbee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_isgi_roster_calendar.x_isgi_roster.slc</sys_name>
+        <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
+        <sys_security_acl display_value="x_isgi_roster_calendar">32e2fdbc1b1c6410af1ef436464bcbc4</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_468ea8ad1b90e810af1ef436464bcbee</sys_update_name>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-11-05 08:50:47</sys_updated_on>
+        <sys_user_role display_value="x_isgi_roster.slc" name="x_isgi_roster.slc">39bda65c1b046c549d4e6392f54bcb24</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

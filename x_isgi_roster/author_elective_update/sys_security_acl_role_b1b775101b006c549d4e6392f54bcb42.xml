@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-10-20 06:42:17</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b1b775101b006c549d4e6392f54bcb42</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_isgi_roster_calendar.x_isgi_roster.calendar_user</sys_name>
+        <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
+        <sys_security_acl display_value="x_isgi_roster_calendar">bdb775101b006c549d4e6392f54bcb3d</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_b1b775101b006c549d4e6392f54bcb42</sys_update_name>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-10-20 06:42:17</sys_updated_on>
+        <sys_user_role display_value="x_isgi_roster.calendar_user" name="x_isgi_roster.calendar_user">49b775101b006c549d4e6392f54bcb14</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</application>
+        <file_path/>
+        <instance_id>69a78f219b99cb447ac36b8af359ff47</instance_id>
+        <instance_name>isggoverndev4</instance_name>
+        <name>sys_security_acl_role_b1b775101b006c549d4e6392f54bcb42</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-10-20 06:42:17</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b1b775101b006c549d4e6392f54bcb42</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_isgi_roster_calendar.x_isgi_roster.calendar_user</sys_name>
+        <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
+        <sys_security_acl display_value="x_isgi_roster_calendar">bdb775101b006c549d4e6392f54bcb3d</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_b1b775101b006c549d4e6392f54bcb42</sys_update_name>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-10-20 06:42:17</sys_updated_on>
+        <sys_user_role display_value="x_isgi_roster.calendar_user" name="x_isgi_roster.calendar_user">49b775101b006c549d4e6392f54bcb14</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>]]></payload>
+        <payload_hash>1227465337</payload_hash>
+        <record_name>x_isgi_roster_calendar.x_isgi_roster.calendar_user</record_name>
+        <reverted_from/>
+        <source>509da5f01b1c6410af1ef436464bcb09</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-11-03 05:31:19</sys_created_on>
+        <sys_id>32bd69341b1c6410af1ef436464bcb40</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1758c9691b30000001</sys_recorded_at>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-11-03 05:31:19</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>7ebd6934e91c64109c555e3d8e32e13f</update_guid>
+        <update_guid_history>7ebd6934e91c64109c555e3d8e32e13f:0,779de9f0cc1c6410fb7f69051e943bdc:-1516796141,a422a13cf1986410f1e3123bf16bfc78:0,990229f881986410067fdbd18c309f70:-1516796141,eab125b8ac986410449ae63304f9bc31:0,b291a5784b9864104c1965ecf22bdcc5:-1516796141,f5b775102d006c54143e358ed8dfa445:-805015867</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 05-Nov-2020 02.20.08 PM">b26ee8ad1b90e810af1ef436464bcb66</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-11-05 08:50:08</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>0d0b74862b9d488ba5a722004408db79</sys_id>
+        <sys_metadata>b1b775101b006c549d4e6392f54bcb42</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_isgi_roster_calendar.x_isgi_roster.calendar_user</sys_name>
+        <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
+        <sys_parent display_value="x_isgi_roster_calendar">bdb775101b006c549d4e6392f54bcb3d</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
+        <sys_scope_delete display_value="">94aba01e32774c00ad01831d23410000</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_b1b775101b006c549d4e6392f54bcb42</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_b1b775101b006c549d4e6392f54bcb42">32bd69341b1c6410af1ef436464bcb40</sys_update_version>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-11-05 08:50:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
