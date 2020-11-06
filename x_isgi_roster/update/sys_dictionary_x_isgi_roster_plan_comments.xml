@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="" table="x_isgi_roster_plan">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="comments" table="x_isgi_roster_plan">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
         <attributes/>
-        <audit>true</audit>
-        <calculation/>
-        <choice>0</choice>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label/>
+        <column_label>Comments</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -22,14 +27,14 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element/>
+        <element>comments</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="Collection">collection</internal_type>
+        <internal_type display_value="">journal_input</internal_type>
         <mandatory>false</mandatory>
-        <max_length>40</max_length>
+        <max_length>4000</max_length>
         <name>x_isgi_roster_plan</name>
         <next_element/>
         <primary>false</primary>
@@ -42,23 +47,23 @@
         <reference_qual/>
         <reference_qual_condition/>
         <reference_type/>
-        <sizeclass>2</sizeclass>
+        <sizeclass/>
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
-        <sys_created_on>2020-10-12 10:57:06</sys_created_on>
+        <sys_created_on>2020-11-06 05:22:01</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>e7ade1341b1c6410af1ef436464bcb3a</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>x_isgi_roster_plan</sys_name>
+        <sys_id>3a4805311b546c10af1ef436464bcbb6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Comments</sys_name>
         <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
-        <sys_update_name>sys_dictionary_x_isgi_roster_plan_null</sys_update_name>
+        <sys_update_name>sys_dictionary_x_isgi_roster_plan_comments</sys_update_name>
         <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-        <sys_updated_on>2020-11-06 05:21:15</sys_updated_on>
+        <sys_updated_on>2020-11-06 05:22:01</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

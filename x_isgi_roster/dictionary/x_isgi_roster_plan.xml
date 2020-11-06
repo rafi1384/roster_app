@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Roster Plan" max_length="40" name="x_isgi_roster_plan" sizeclass="2" type="collection">
+    <element audit="true" label="Roster Plan" max_length="40" name="x_isgi_roster_plan" sizeclass="2" type="collection">
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Comments" max_length="4000" name="comments" type="journal_input"/>
         <element attributes="encode_utf8=false" default="javascript:gs.getUserID()" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Created by" max_length="32" name="created_by" read_only="true" reference="sys_user" type="reference" use_dynamic_default="true"/>
         <element attributes="encode_utf8=false" label="Created by Manager" max_length="32" name="created_by_manager" read_only="true" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Days" max_length="40" name="days" read_only="true" type="string"/>
@@ -40,10 +41,11 @@
         </element>
         <element attributes="edge_encryption_enabled=true" choice="1" default="1" label="Workflow State" max_length="100" name="workflow_state" read_only="true" type="string">
             <choice>
-                <element inactive_on_update="false" label="Draft" sequence="1" value="1"/>
-                <element inactive_on_update="false" label="Pending Approval" sequence="2" value="2"/>
-                <element inactive_on_update="false" label="Approved" sequence="3" value="3"/>
-                <element inactive_on_update="false" label="Rejected" sequence="4" value="4"/>
+                <element inactive_on_update="false" label="Draft" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Pending Approval" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Approved" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="Rejected" sequence="3" value="4"/>
+                <element inactive_on_update="false" label="Closed" sequence="4" value="5"/>
             </choice>
         </element>
         <index name="index">
