@@ -26,7 +26,7 @@
         </element>
         <element attributes="encode_utf8=false" label="Employee Manager" max_length="32" name="manager" read_only="true" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Month" max_length="40" name="month" read_only="true" type="string"/>
-        <element attributes="encode_utf8=false" label="Name" mandatory="true" max_length="32" name="name" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element attributes="encode_utf8=false" default="javascript:gs.getUserID()" dynamic_default_value="90d1921e5f510100a9ad2572f2b477fe" label="Name" max_length="32" name="name" read_only="true" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference" use_dynamic_default="true"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Roster Start Date" max_length="40" name="roster_start_date" type="glide_date"/>
         <element attributes="encode_utf8=false" label="SLC" max_length="32" name="slc" read_only="true" reference="sys_user" type="reference"/>
@@ -35,7 +35,7 @@
             <choice>
                 <element inactive_on_update="false" label="Fixed Seat" sequence="0" value="1"/>
                 <element inactive_on_update="false" label="Shared Seat" sequence="1" value="2"/>
-                <element inactive="true" inactive_on_update="true" label="Flexi" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="Work from Home" sequence="2" value="3"/>
                 <element inactive="true" inactive_on_update="true" label="Not Applicable" sequence="3" value="4"/>
             </choice>
         </element>
