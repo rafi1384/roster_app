@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" label="Roster Plan" max_length="40" name="x_isgi_roster_plan" sizeclass="2" type="collection">
+    <element audit="true" label="Roster Plan" max_length="40" name="x_isgi_roster_plan" sizeclass="10" type="collection">
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Comments" max_length="4000" name="comments" type="journal_input"/>
         <element attributes="encode_utf8=false" default="javascript:gs.getUserID()" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Created by" max_length="32" name="created_by" read_only="true" reference="sys_user" type="reference" use_dynamic_default="true"/>
         <element attributes="encode_utf8=false" label="Created by Manager" max_length="32" name="created_by_manager" read_only="true" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Dates" max_length="100" name="dates" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Days" max_length="40" name="days" read_only="true" type="string"/>
         <element attributes="encode_utf8=false" label="Department" max_length="32" name="department" read_only="true" reference="cmn_department" type="reference"/>
         <element label="Duration" max_length="40" name="duration" read_only="true" type="glide_duration"/>
@@ -26,7 +27,7 @@
         </element>
         <element attributes="encode_utf8=false" label="Employee Manager" max_length="32" name="manager" read_only="true" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Month" max_length="40" name="month" read_only="true" type="string"/>
-        <element attributes="encode_utf8=false" default="javascript:gs.getUserID()" dynamic_default_value="90d1921e5f510100a9ad2572f2b477fe" label="Name" max_length="32" name="name" read_only="true" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference" use_dynamic_default="true"/>
+        <element attributes="encode_utf8=false" default="javascript:gs.getUserID()" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Name" max_length="32" name="name" read_only="true" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference" use_dynamic_default="true"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Roster Start Date" max_length="40" name="roster_start_date" type="glide_date"/>
         <element attributes="encode_utf8=false" label="SLC" max_length="32" name="slc" read_only="true" reference="sys_user" type="reference"/>

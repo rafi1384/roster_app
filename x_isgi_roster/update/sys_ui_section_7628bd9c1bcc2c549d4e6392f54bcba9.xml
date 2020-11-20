@@ -4,13 +4,13 @@
             <element>parent_id</element>
             <position>0</position>
             <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
-            <sys_created_on>2020-10-20 07:29:16</sys_created_on>
-            <sys_id>867282901b406c549d4e6392f54bcb62</sys_id>
+            <sys_created_on>2020-11-18 12:03:09</sys_created_on>
+            <sys_id>204794311b2ca810af1ef436464bcbf4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_isgi_roster_calendar" sys_domain="global" view="Default view">7628bd9c1bcc2c549d4e6392f54bcba9</sys_ui_section>
             <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-            <sys_updated_on>2020-10-20 07:29:16</sys_updated_on>
+            <sys_updated_on>2020-11-18 12:03:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,167 +18,181 @@
             <element>emp_id</element>
             <position>1</position>
             <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
-            <sys_created_on>2020-10-20 07:29:16</sys_created_on>
-            <sys_id>0e7282901b406c549d4e6392f54bcb62</sys_id>
+            <sys_created_on>2020-11-18 12:03:09</sys_created_on>
+            <sys_id>e84794311b2ca810af1ef436464bcbf4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_isgi_roster_calendar" sys_domain="global" view="Default view">7628bd9c1bcc2c549d4e6392f54bcba9</sys_ui_section>
             <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-            <sys_updated_on>2020-10-20 07:29:16</sys_updated_on>
+            <sys_updated_on>2020-11-18 12:03:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>calendar_details</element>
+            <position>2</position>
+            <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+            <sys_created_on>2020-11-18 12:03:09</sys_created_on>
+            <sys_id>604794311b2ca810af1ef436464bcbf5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_isgi_roster_calendar" sys_domain="global" view="Default view">7628bd9c1bcc2c549d4e6392f54bcba9</sys_ui_section>
+            <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+            <sys_updated_on>2020-11-18 12:03:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>name</element>
-            <position>2</position>
+            <position>3</position>
             <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
-            <sys_created_on>2020-10-20 07:29:16</sys_created_on>
-            <sys_id>827282901b406c549d4e6392f54bcb63</sys_id>
+            <sys_created_on>2020-11-18 12:03:09</sys_created_on>
+            <sys_id>e44794311b2ca810af1ef436464bcbf5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_isgi_roster_calendar" sys_domain="global" view="Default view">7628bd9c1bcc2c549d4e6392f54bcba9</sys_ui_section>
             <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-            <sys_updated_on>2020-10-20 07:29:16</sys_updated_on>
+            <sys_updated_on>2020-11-18 12:03:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>email_id</element>
-            <position>3</position>
+            <position>4</position>
             <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
-            <sys_created_on>2020-10-20 07:29:16</sys_created_on>
-            <sys_id>0a7282901b406c549d4e6392f54bcb63</sys_id>
+            <sys_created_on>2020-11-18 12:03:09</sys_created_on>
+            <sys_id>6c4794311b2ca810af1ef436464bcbf5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_isgi_roster_calendar" sys_domain="global" view="Default view">7628bd9c1bcc2c549d4e6392f54bcba9</sys_ui_section>
             <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-            <sys_updated_on>2020-10-20 07:29:16</sys_updated_on>
+            <sys_updated_on>2020-11-18 12:03:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>department</element>
-            <position>4</position>
+            <position>5</position>
             <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
-            <sys_created_on>2020-10-20 07:29:16</sys_created_on>
-            <sys_id>8e7282901b406c549d4e6392f54bcb63</sys_id>
+            <sys_created_on>2020-11-18 12:03:09</sys_created_on>
+            <sys_id>e04794311b2ca810af1ef436464bcbf6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_isgi_roster_calendar" sys_domain="global" view="Default view">7628bd9c1bcc2c549d4e6392f54bcba9</sys_ui_section>
             <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-            <sys_updated_on>2020-10-20 07:29:16</sys_updated_on>
+            <sys_updated_on>2020-11-18 12:03:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>employee_manager</element>
-            <position>5</position>
+            <position>6</position>
             <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
-            <sys_created_on>2020-10-20 07:29:16</sys_created_on>
-            <sys_id>067282901b406c549d4e6392f54bcb64</sys_id>
+            <sys_created_on>2020-11-18 12:03:09</sys_created_on>
+            <sys_id>684794311b2ca810af1ef436464bcbf6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_isgi_roster_calendar" sys_domain="global" view="Default view">7628bd9c1bcc2c549d4e6392f54bcba9</sys_ui_section>
             <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-            <sys_updated_on>2020-10-20 07:29:16</sys_updated_on>
+            <sys_updated_on>2020-11-18 12:03:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>created_by_manager</element>
-            <position>6</position>
+            <position>7</position>
             <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
-            <sys_created_on>2020-10-20 07:29:16</sys_created_on>
-            <sys_id>8a7282901b406c549d4e6392f54bcb64</sys_id>
+            <sys_created_on>2020-11-18 12:03:09</sys_created_on>
+            <sys_id>ec4794311b2ca810af1ef436464bcbf6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_isgi_roster_calendar" sys_domain="global" view="Default view">7628bd9c1bcc2c549d4e6392f54bcba9</sys_ui_section>
             <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-            <sys_updated_on>2020-10-20 07:29:16</sys_updated_on>
+            <sys_updated_on>2020-11-18 12:03:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>7</position>
+            <position>8</position>
             <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
-            <sys_created_on>2020-10-20 07:29:16</sys_created_on>
-            <sys_id>027282901b406c549d4e6392f54bcb65</sys_id>
+            <sys_created_on>2020-11-18 12:03:09</sys_created_on>
+            <sys_id>644794311b2ca810af1ef436464bcbf7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_isgi_roster_calendar" sys_domain="global" view="Default view">7628bd9c1bcc2c549d4e6392f54bcba9</sys_ui_section>
             <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-            <sys_updated_on>2020-10-20 07:29:16</sys_updated_on>
+            <sys_updated_on>2020-11-18 12:03:09</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>type</element>
-            <position>8</position>
+            <position>9</position>
             <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
-            <sys_created_on>2020-10-20 07:29:16</sys_created_on>
-            <sys_id>867282901b406c549d4e6392f54bcb65</sys_id>
+            <sys_created_on>2020-11-18 12:03:09</sys_created_on>
+            <sys_id>e84794311b2ca810af1ef436464bcbf7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_isgi_roster_calendar" sys_domain="global" view="Default view">7628bd9c1bcc2c549d4e6392f54bcba9</sys_ui_section>
             <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-            <sys_updated_on>2020-10-20 07:29:16</sys_updated_on>
+            <sys_updated_on>2020-11-18 12:03:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>team_name</element>
-            <position>9</position>
+            <position>10</position>
             <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
-            <sys_created_on>2020-10-20 07:29:16</sys_created_on>
-            <sys_id>0e7282901b406c549d4e6392f54bcb65</sys_id>
+            <sys_created_on>2020-11-18 12:03:09</sys_created_on>
+            <sys_id>604794311b2ca810af1ef436464bcbf8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_isgi_roster_calendar" sys_domain="global" view="Default view">7628bd9c1bcc2c549d4e6392f54bcba9</sys_ui_section>
             <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-            <sys_updated_on>2020-10-20 07:29:16</sys_updated_on>
+            <sys_updated_on>2020-11-18 12:03:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>start_date</element>
-            <position>10</position>
+            <position>11</position>
             <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
-            <sys_created_on>2020-10-20 07:29:16</sys_created_on>
-            <sys_id>827282901b406c549d4e6392f54bcb66</sys_id>
+            <sys_created_on>2020-11-18 12:03:09</sys_created_on>
+            <sys_id>e44794311b2ca810af1ef436464bcbf8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_isgi_roster_calendar" sys_domain="global" view="Default view">7628bd9c1bcc2c549d4e6392f54bcba9</sys_ui_section>
             <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-            <sys_updated_on>2020-10-20 07:29:16</sys_updated_on>
+            <sys_updated_on>2020-11-18 12:03:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>end_date</element>
-            <position>11</position>
+            <position>12</position>
             <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
-            <sys_created_on>2020-10-20 07:29:16</sys_created_on>
-            <sys_id>0a7282901b406c549d4e6392f54bcb66</sys_id>
+            <sys_created_on>2020-11-18 12:03:09</sys_created_on>
+            <sys_id>6c4794311b2ca810af1ef436464bcbf8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_isgi_roster_calendar" sys_domain="global" view="Default view">7628bd9c1bcc2c549d4e6392f54bcba9</sys_ui_section>
             <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-            <sys_updated_on>2020-10-20 07:29:16</sys_updated_on>
+            <sys_updated_on>2020-11-18 12:03:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>workflow_state</element>
-            <position>12</position>
+            <position>13</position>
             <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
-            <sys_created_on>2020-10-20 07:29:16</sys_created_on>
-            <sys_id>8e7282901b406c549d4e6392f54bcb66</sys_id>
+            <sys_created_on>2020-11-18 12:03:09</sys_created_on>
+            <sys_id>e04794311b2ca810af1ef436464bcbf9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_isgi_roster_calendar" sys_domain="global" view="Default view">7628bd9c1bcc2c549d4e6392f54bcba9</sys_ui_section>
             <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-            <sys_updated_on>2020-10-20 07:29:16</sys_updated_on>
+            <sys_updated_on>2020-11-18 12:03:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
