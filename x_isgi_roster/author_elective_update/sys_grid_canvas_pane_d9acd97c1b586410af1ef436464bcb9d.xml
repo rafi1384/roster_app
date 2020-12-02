@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane">
+    <sys_grid_canvas_pane action="DELETE">
+        <grid_canvas display_value="PA Roster - New Tab">4b9b39751bf39c149d4e6392f54bcb16</grid_canvas>
+        <height>4</height>
+        <portal_widget display_value="Created 03-Nov-2020 09.46.40 AM">d5acd97c1b586410af1ef436464bcb9b</portal_widget>
+        <posx>2</posx>
+        <posy>4</posy>
+        <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-11-03 04:16:40</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d9acd97c1b586410af1ef436464bcb9d</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>4b9b39751bf39c149d4e6392f54bcb16</sys_name>
+        <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
+        <sys_update_name>sys_grid_canvas_pane_d9acd97c1b586410af1ef436464bcb9d</sys_update_name>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-12-02 02:17:19</sys_updated_on>
+        <width>2</width>
+    </sys_grid_canvas_pane>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</application>
+        <file_path/>
+        <instance_id>69a78f219b99cb447ac36b8af359ff47</instance_id>
+        <instance_name>isggoverndev4</instance_name>
+        <name>sys_grid_canvas_pane_d9acd97c1b586410af1ef436464bcb9d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane"><sys_grid_canvas_pane action="INSERT_OR_UPDATE"><grid_canvas display_value="PA Roster - New Tab">4b9b39751bf39c149d4e6392f54bcb16</grid_canvas><height>4</height><portal_widget display_value="Created 03-Nov-2020 09.46.40 AM">d5acd97c1b586410af1ef436464bcb9b</portal_widget><posx>2</posx><posy>4</posy><sys_class_name>sys_grid_canvas_pane</sys_class_name><sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by><sys_created_on>2020-11-03 04:16:40</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>d9acd97c1b586410af1ef436464bcb9d</sys_id><sys_mod_count>9</sys_mod_count><sys_name>4b9b39751bf39c149d4e6392f54bcb16</sys_name><sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope><sys_update_name>sys_grid_canvas_pane_d9acd97c1b586410af1ef436464bcb9d</sys_update_name><sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by><sys_updated_on>2020-12-02 02:17:19</sys_updated_on><width>2</width></sys_grid_canvas_pane></record_update>]]></payload>
+        <payload_hash>-746356644</payload_hash>
+        <record_name>4b9b39751bf39c149d4e6392f54bcb16</record_name>
+        <reverted_from/>
+        <source>c2cd25bc1bd86410af1ef436464bcb43</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-12-02 02:17:19</sys_created_on>
+        <sys_id>eb67d2861bbc2c90af1ef436464bcbb9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>176213d612b0000001</sys_recorded_at>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-12-02 02:17:19</sys_updated_on>
+        <type>Grid Canvas Pane</type>
+        <update_guid>a767da4641bc2c90c97de424b1b9c5c1</update_guid>
+        <update_guid_history>a767da4641bc2c90c97de424b1b9c5c1:-746356644,ad475e465abc2c90d8b9cd1b854e13f3:1622170840,c2bde534501c64103dc59c77751db7ec:0,b1adedf04c1c6410a331d4a4c3e06a8d:0,194aedf85cd86410d8895adfc1efceac:-746356644,f712613c919864108443c406ef5cf225:0,5f02a9f835986410f0b6d8f54b992af3:0,35b1a1b8b19864108b5e16cf967c2992:0,dda1e9780e9864102d0b1960bde17924:0,2c1e9d30509864102cb0d70a73c74dc0:-746356644,7b0e9d30539864102738551eb3a7317a:979753443,37bc15bca8586410c6f4c127f0664c79:-746356644,8fbc15bc78586410ec7cdf890b1f5106:979753443,61bcd1bc0e5864101958a7aac90be85a:-746356644,17ac91bca2586410004a92dce346e673:-1284179422,a6ac51bc90586410c4208caee1afa4f7:-701535725,1dacd97c56586410ec354acdcded269e:-1252233794</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-12-02 02:17:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_grid_canvas_pane">sys_grid_canvas_pane</sys_db_object>
+        <sys_id>121b311f193343b7b38f1bda589affd1</sys_id>
+        <sys_metadata>d9acd97c1b586410af1ef436464bcb9d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>4b9b39751bf39c149d4e6392f54bcb16</sys_name>
+        <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
+        <sys_scope_delete display_value="">94aba01e32774c00ad01831d23410000</sys_scope_delete>
+        <sys_update_name>sys_grid_canvas_pane_d9acd97c1b586410af1ef436464bcb9d</sys_update_name>
+        <sys_update_version display_value="sys_grid_canvas_pane_d9acd97c1b586410af1ef436464bcb9d">eb67d2861bbc2c90af1ef436464bcbb9</sys_update_version>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-12-02 02:17:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

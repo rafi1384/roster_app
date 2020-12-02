@@ -4,7 +4,7 @@
         <breakdown_source/>
         <color>#ffffff</color>
         <disable_multiple_element>false</disable_multiple_element>
-        <group/>
+        <group display_value="Roster">e227d6461bbc2c90af1ef436464bcbbf</group>
         <groups/>
         <is_breakdown>false</is_breakdown>
         <managed_breakdown/>
@@ -24,7 +24,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2c9bf5751bf39c149d4e6392f54bcb9d</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Roster</sys_name>
         <sys_overrides/>
         <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
@@ -33,7 +33,7 @@
         <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
         <sys_update_name>pa_dashboards_2c9bf5751bf39c149d4e6392f54bcb9d</sys_update_name>
         <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-        <sys_updated_on>2020-11-03 05:20:14</sys_updated_on>
+        <sys_updated_on>2020-12-02 02:16:21</sys_updated_on>
         <users/>
         <visible_to>2</visible_to>
     </pa_dashboards>

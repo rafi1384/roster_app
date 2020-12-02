@@ -43,11 +43,11 @@
                 <element inactive="true" inactive_on_update="true" label="Not Applicable" sequence="3" value="4"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" choice="1" default="1" label="Workflow State" max_length="100" name="workflow_state" read_only="true" type="string">
+        <element attributes="edge_encryption_enabled=true" choice="1" default="1" label="Workflow State" max_length="100" name="workflow_state" type="string">
             <choice>
                 <element inactive_on_update="false" label="Draft" sequence="0" value="1"/>
                 <element inactive_on_update="false" label="Pending Approval" sequence="1" value="2"/>
-                <element inactive_on_update="false" label="Approved" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="Completed" sequence="2" value="3"/>
                 <element inactive_on_update="false" label="Rejected" sequence="3" value="4"/>
                 <element inactive_on_update="false" label="Closed" sequence="4" value="5"/>
             </choice>

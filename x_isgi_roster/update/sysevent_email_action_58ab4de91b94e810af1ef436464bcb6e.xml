@@ -8,7 +8,7 @@
         <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
         <collection>x_isgi_roster_plan</collection>
         <condition table="x_isgi_roster_plan">workflow_stateCHANGESFROM2^workflow_stateCHANGESTO3^NQworkflow_stateCHANGESFROM2^workflow_stateCHANGESTO5^EQ<item display_value="Pending Approval" endquery="false" field="workflow_state" goto="false" newquery="false" operator="CHANGESFROM" or="false" value="2"/>
-            <item display_value="Approved" endquery="false" field="workflow_state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="3"/>
+            <item display_value="Completed" endquery="false" field="workflow_state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="3"/>
             <item display_value="Pending Approval" endquery="false" field="workflow_state" goto="false" newquery="true" operator="CHANGESFROM" or="false" value="2"/>
             <item display_value="Closed" endquery="false" field="workflow_state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="5"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>

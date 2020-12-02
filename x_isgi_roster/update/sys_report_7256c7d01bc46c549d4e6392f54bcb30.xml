@@ -23,7 +23,7 @@
         <chart_title_x_position>0</chart_title_x_position>
         <chart_title_y_position>0</chart_title_y_position>
         <chart_width/>
-        <color display_value="Default Color">de699435d7033100b4964ebfae610331</color>
+        <color display_value="SkyBlue">65b303a9a9fe3dba0158a61e5aca7b63</color>
         <color_palette display_value="Default UI14">aa558ab3d7732100fa6c0c12ce610377</color_palette>
         <colors/>
         <column>sys_created_on</column>
@@ -44,7 +44,7 @@
         <exp_report_attrs>true</exp_report_attrs>
         <field>manager</field>
         <field_list/>
-        <filter table="x_isgi_roster_plan">workflow_state=3^managerISNOTEMPTY<item display_value="Approved" endquery="false" field="workflow_state" goto="false" newquery="false" operator="=" or="false" value="3"/>
+        <filter table="x_isgi_roster_plan">workflow_state=5^managerISNOTEMPTY<item display_value="Closed" endquery="false" field="workflow_state" goto="false" newquery="false" operator="=" or="false" value="5"/>
             <item endquery="false" field="manager" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
         </filter>
         <from/>
@@ -76,7 +76,7 @@
         <pivot_expanded>true</pivot_expanded>
         <report_drilldown/>
         <report_source/>
-        <roles>snc_external,snc_internal,public</roles>
+        <roles>public,snc_external,snc_internal</roles>
         <row>sys_created_on</row>
         <sc_groupby_item_id/>
         <sc_groupby_variable_id/>
@@ -84,7 +84,7 @@
         <sc_stackby_variable_id/>
         <score_color display_value="Black">65b30218a9fe3dba0120df8611520d97</score_color>
         <series_name_text/>
-        <set_color>chart_colors</set_color>
+        <set_color>one_color</set_color>
         <show_chart_border>false</show_chart_border>
         <show_chart_data_label>false</show_chart_data_label>
         <show_chart_title>report</show_chart_title>
@@ -105,7 +105,7 @@
         <sys_created_on>2020-10-20 12:25:52</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>7256c7d01bc46c549d4e6392f54bcb30</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Scheduled Seats by Manager</sys_name>
         <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
         <sys_policy/>
@@ -113,13 +113,13 @@
         <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
         <sys_update_name>sys_report_7256c7d01bc46c549d4e6392f54bcb30</sys_update_name>
         <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-        <sys_updated_on>2020-11-05 09:08:21</sys_updated_on>
+        <sys_updated_on>2020-12-02 02:34:11</sys_updated_on>
         <table>x_isgi_roster_plan</table>
         <title>Scheduled Seats by Manager</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
         <title_vertical_alignment>top</title_vertical_alignment>
         <to/>
-        <trend_field>type</trend_field>
+        <trend_field/>
         <type>horizontal_bar</type>
         <upper_limit/>
         <use_color_heatmap>true</use_color_heatmap>

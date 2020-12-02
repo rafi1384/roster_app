@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_hp_date">
+    <sys_ui_hp_date action="INSERT_OR_UPDATE">
+        <date_field>start_date</date_field>
+        <date_table>x_isgi_roster_calendar</date_table>
+        <publisher_reference display_value="Range">7c846ec21b306c90af1ef436464bcbaf</publisher_reference>
+        <sys_class_name>sys_ui_hp_date</sys_class_name>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-12-02 03:17:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>03f42e061b306c90af1ef436464bcbab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>7c846ec21b306c90af1ef436464bcbaf</sys_name>
+        <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
+        <sys_update_name>sys_ui_hp_date_03f42e061b306c90af1ef436464bcbab</sys_update_name>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-12-02 03:17:19</sys_updated_on>
+    </sys_ui_hp_date>
+</record_update>

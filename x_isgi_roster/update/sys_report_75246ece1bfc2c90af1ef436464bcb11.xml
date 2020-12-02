@@ -23,11 +23,11 @@
         <chart_title_x_position>0</chart_title_x_position>
         <chart_title_y_position>0</chart_title_y_position>
         <chart_width/>
-        <color display_value="SkyBlue">65b303a9a9fe3dba0158a61e5aca7b63</color>
+        <color display_value="Default Color">de699435d7033100b4964ebfae610331</color>
         <color_palette display_value="Default UI14">aa558ab3d7732100fa6c0c12ce610377</color_palette>
         <colors/>
-        <column>sys_created_on</column>
-        <compute_percent>aggregate</compute_percent>
+        <column>calendar_details</column>
+        <compute_percent>count</compute_percent>
         <content/>
         <created_by_user display_value="Mohamed Rafiulla">bfdc2ff4dba613009a635858dc961933</created_by_user>
         <custom_chart_size>false</custom_chart_size>
@@ -42,18 +42,16 @@
         <donut_width_percent>50</donut_width_percent>
         <end_time/>
         <exp_report_attrs>true</exp_report_attrs>
-        <field>slc</field>
-        <field_list/>
-        <filter table="x_isgi_roster_plan">workflow_state=5^slcISNOTEMPTY<item display_value="Closed" endquery="false" field="workflow_state" goto="false" newquery="false" operator="=" or="false" value="5"/>
-            <item endquery="false" field="slc" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
-        </filter>
+        <field/>
+        <field_list>parent_id,name,emp_id,email_id,employee_manager,start_date,workflow_state</field_list>
+        <filter/>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>
         <gauge_autoscale>true</gauge_autoscale>
         <group/>
         <import_table/>
-        <interval>year</interval>
-        <is_published>true</is_published>
+        <interval>week</interval>
+        <is_published>false</is_published>
         <is_real_time>false</is_real_time>
         <is_scheduled>false</is_scheduled>
         <legend_align_columns>true</legend_align_columns>
@@ -76,15 +74,15 @@
         <pivot_expanded>true</pivot_expanded>
         <report_drilldown/>
         <report_source/>
-        <roles>public,snc_external,snc_internal</roles>
-        <row>sys_created_on</row>
+        <roles>snc_internal,snc_external</roles>
+        <row>calendar_details</row>
         <sc_groupby_item_id/>
         <sc_groupby_variable_id/>
         <sc_stackby_item_id/>
         <sc_stackby_variable_id/>
         <score_color display_value="Black">65b30218a9fe3dba0120df8611520d97</score_color>
         <series_name_text/>
-        <set_color>one_color</set_color>
+        <set_color/>
         <show_chart_border>false</show_chart_border>
         <show_chart_data_label>false</show_chart_data_label>
         <show_chart_title>report</show_chart_title>
@@ -99,28 +97,28 @@
         <source_type>table</source_type>
         <start_time/>
         <style_config/>
-        <sumfield>duration</sumfield>
+        <sumfield>created_by_manager...</sumfield>
         <sys_class_name>sys_report</sys_class_name>
         <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
-        <sys_created_on>2020-10-20 12:58:02</sys_created_on>
+        <sys_created_on>2020-12-02 03:12:54</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>0ebd4fdc1bc46c549d4e6392f54bcb0f</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_name>Seat by SLC Member</sys_name>
+        <sys_id>75246ece1bfc2c90af1ef436464bcb11</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Calendar List</sys_name>
         <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
-        <sys_update_name>sys_report_0ebd4fdc1bc46c549d4e6392f54bcb0f</sys_update_name>
+        <sys_update_name>sys_report_75246ece1bfc2c90af1ef436464bcb11</sys_update_name>
         <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-        <sys_updated_on>2020-12-02 02:34:40</sys_updated_on>
-        <table>x_isgi_roster_plan</table>
-        <title>Seat by SLC Member</title>
+        <sys_updated_on>2020-12-02 03:12:55</sys_updated_on>
+        <table>x_isgi_roster_calendar</table>
+        <title>Calendar List</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
         <title_vertical_alignment>top</title_vertical_alignment>
         <to/>
-        <trend_field/>
-        <type>horizontal_bar</type>
+        <trend_field>start_date</trend_field>
+        <type>list</type>
         <upper_limit/>
         <use_color_heatmap>true</use_color_heatmap>
         <use_color_palette>false</use_color_palette>
@@ -136,7 +134,7 @@
         <x_axis_label_size>11</x_axis_label_size>
         <x_axis_label_tilt>0</x_axis_label_tilt>
         <x_axis_opposite>false</x_axis_opposite>
-        <x_axis_title>SLC</x_axis_title>
+        <x_axis_title/>
         <x_axis_title_bold>true</x_axis_title_bold>
         <x_axis_title_color display_value="Black">65b30218a9fe3dba0120df8611520d97</x_axis_title_color>
         <x_axis_title_size>12</x_axis_title_size>
@@ -151,7 +149,7 @@
         <y_axis_label_size>11</y_axis_label_size>
         <y_axis_label_tilt>0</y_axis_label_tilt>
         <y_axis_opposite>false</y_axis_opposite>
-        <y_axis_title>Count of Seats</y_axis_title>
+        <y_axis_title/>
         <y_axis_title_bold>true</y_axis_title_bold>
         <y_axis_title_color display_value="Black">65b30218a9fe3dba0120df8611520d97</y_axis_title_color>
         <y_axis_title_size>12</y_axis_title_size>

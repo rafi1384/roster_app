@@ -42,7 +42,7 @@
         <donut_width_percent>50</donut_width_percent>
         <end_time/>
         <exp_report_attrs>true</exp_report_attrs>
-        <field/>
+        <field>slc</field>
         <field_list/>
         <filter/>
         <from/>
@@ -82,7 +82,7 @@
         <sc_stackby_variable_id/>
         <score_color display_value="Black">65b30218a9fe3dba0120df8611520d97</score_color>
         <series_name_text/>
-        <set_color>one_color</set_color>
+        <set_color>color_palette</set_color>
         <show_chart_border>false</show_chart_border>
         <show_chart_data_label>false</show_chart_data_label>
         <show_chart_title>never</show_chart_title>
@@ -103,7 +103,7 @@
         <sys_created_on>2020-11-02 10:38:05</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>665aed2c1b1ce010af1ef436464bcb79</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>MoM by SLC Total Fill %</sys_name>
         <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
         <sys_policy/>
@@ -111,7 +111,7 @@
         <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
         <sys_update_name>sys_report_665aed2c1b1ce010af1ef436464bcb79</sys_update_name>
         <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-        <sys_updated_on>2020-11-02 10:38:05</sys_updated_on>
+        <sys_updated_on>2020-12-02 02:36:12</sys_updated_on>
         <table>x_isgi_roster_allocation</table>
         <title>MoM by SLC Total Fill %</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
