@@ -3,7 +3,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>parent_id</element>
-            <list_id display_value="x_isgi_roster_calendar" element="NULL" name="x_isgi_roster_calendar" parent="NULL" relationship="NULL" sys_domain="global" view="71246ece1bfc2c90af1ef436464bcb15">f9246ece1bfc2c90af1ef436464bcb15</list_id>
+            <list_id display_value="x_isgi_roster_calendar" element="NULL" name="x_isgi_roster_calendar" parent="NULL" relationship="NULL" sys_domain="global" view="b65aa6421b706c90af1ef436464bcb75">f9246ece1bfc2c90af1ef436464bcb15</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
@@ -18,7 +18,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>name</element>
-            <list_id display_value="x_isgi_roster_calendar" element="NULL" name="x_isgi_roster_calendar" parent="NULL" relationship="NULL" sys_domain="global" view="71246ece1bfc2c90af1ef436464bcb15">f9246ece1bfc2c90af1ef436464bcb15</list_id>
+            <list_id display_value="x_isgi_roster_calendar" element="NULL" name="x_isgi_roster_calendar" parent="NULL" relationship="NULL" sys_domain="global" view="b65aa6421b706c90af1ef436464bcb75">f9246ece1bfc2c90af1ef436464bcb15</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
@@ -33,7 +33,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>emp_id</element>
-            <list_id display_value="x_isgi_roster_calendar" element="NULL" name="x_isgi_roster_calendar" parent="NULL" relationship="NULL" sys_domain="global" view="71246ece1bfc2c90af1ef436464bcb15">f9246ece1bfc2c90af1ef436464bcb15</list_id>
+            <list_id display_value="x_isgi_roster_calendar" element="NULL" name="x_isgi_roster_calendar" parent="NULL" relationship="NULL" sys_domain="global" view="b65aa6421b706c90af1ef436464bcb75">f9246ece1bfc2c90af1ef436464bcb15</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
@@ -48,7 +48,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>email_id</element>
-            <list_id display_value="x_isgi_roster_calendar" element="NULL" name="x_isgi_roster_calendar" parent="NULL" relationship="NULL" sys_domain="global" view="71246ece1bfc2c90af1ef436464bcb15">f9246ece1bfc2c90af1ef436464bcb15</list_id>
+            <list_id display_value="x_isgi_roster_calendar" element="NULL" name="x_isgi_roster_calendar" parent="NULL" relationship="NULL" sys_domain="global" view="b65aa6421b706c90af1ef436464bcb75">f9246ece1bfc2c90af1ef436464bcb15</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
@@ -63,7 +63,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>employee_manager</element>
-            <list_id display_value="x_isgi_roster_calendar" element="NULL" name="x_isgi_roster_calendar" parent="NULL" relationship="NULL" sys_domain="global" view="71246ece1bfc2c90af1ef436464bcb15">f9246ece1bfc2c90af1ef436464bcb15</list_id>
+            <list_id display_value="x_isgi_roster_calendar" element="NULL" name="x_isgi_roster_calendar" parent="NULL" relationship="NULL" sys_domain="global" view="b65aa6421b706c90af1ef436464bcb75">f9246ece1bfc2c90af1ef436464bcb15</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
@@ -78,7 +78,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>start_date</element>
-            <list_id display_value="x_isgi_roster_calendar" element="NULL" name="x_isgi_roster_calendar" parent="NULL" relationship="NULL" sys_domain="global" view="71246ece1bfc2c90af1ef436464bcb15">f9246ece1bfc2c90af1ef436464bcb15</list_id>
+            <list_id display_value="x_isgi_roster_calendar" element="NULL" name="x_isgi_roster_calendar" parent="NULL" relationship="NULL" sys_domain="global" view="b65aa6421b706c90af1ef436464bcb75">f9246ece1bfc2c90af1ef436464bcb15</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>5</position>
@@ -93,7 +93,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>workflow_state</element>
-            <list_id display_value="x_isgi_roster_calendar" element="NULL" name="x_isgi_roster_calendar" parent="NULL" relationship="NULL" sys_domain="global" view="71246ece1bfc2c90af1ef436464bcb15">f9246ece1bfc2c90af1ef436464bcb15</list_id>
+            <list_id display_value="x_isgi_roster_calendar" element="NULL" name="x_isgi_roster_calendar" parent="NULL" relationship="NULL" sys_domain="global" view="b65aa6421b706c90af1ef436464bcb75">f9246ece1bfc2c90af1ef436464bcb15</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>6</position>
@@ -132,7 +132,7 @@
             <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
             <sys_updated_on>2020-12-02 03:12:54</sys_updated_on>
             <sys_user/>
-            <view display_value="Rpt75246ece1bfc2c90af1ef436464bcb11" name="RPT75246ece1bfc2c90af1ef436464bcb11">71246ece1bfc2c90af1ef436464bcb15</view>
+            <view display_value="Rpt75246ece1bfc2c90af1ef436464bcb11" name="RPT75246ece1bfc2c90af1ef436464bcb11">b65aa6421b706c90af1ef436464bcb75</view>
             <view_name/>
         </sys_ui_list>
     </sys_ui_list>

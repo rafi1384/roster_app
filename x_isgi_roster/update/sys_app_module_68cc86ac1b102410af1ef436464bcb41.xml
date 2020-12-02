@@ -18,7 +18,7 @@
         <override_menu_roles>false</override_menu_roles>
         <query>$pa_dashboard.do?sysparm_dashboard=2c9bf5751bf39c149d4e6392f54bcb9d&amp;sysparm_tab=4f9b39751bf39c149d4e6392f54bcb18&amp;sysparm_cancelable=true&amp;sysparm_editable=undefined&amp;sysparm_active_panel=false</query>
         <report/>
-        <roles>x_isgi_roster.admin,x_isgi_roster.manager,x_isgi_roster.slc</roles>
+        <roles>x_isgi_roster.admin,x_isgi_roster.manager,x_isgi_roster.slc,x_isgi_roster.employee</roles>
         <survey/>
         <survey_overwrite>true</survey_overwrite>
         <sys_class_name>sys_app_module</sys_class_name>
@@ -28,7 +28,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>68cc86ac1b102410af1ef436464bcb41</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Dashboard</sys_name>
         <sys_overrides/>
         <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
@@ -37,7 +37,7 @@
         <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
         <sys_update_name>sys_app_module_68cc86ac1b102410af1ef436464bcb41</sys_update_name>
         <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-        <sys_updated_on>2020-11-03 04:41:40</sys_updated_on>
+        <sys_updated_on>2020-12-02 03:42:28</sys_updated_on>
         <timeline_page/>
         <title>Dashboard</title>
         <uncancelable>false</uncancelable>
