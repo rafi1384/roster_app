@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" label="Roster Plan" max_length="40" name="x_isgi_roster_plan" sizeclass="22" type="collection">
-        <element label="Actual Booked" max_length="40" name="actual_booked" type="integer"/>
-        <element label="Base Allotted" max_length="40" name="base_allotted" type="integer"/>
+        <element label="Actual Booked" max_length="40" name="actual_booked" read_only="true" type="integer"/>
+        <element label="Base Allotted" max_length="40" name="base_allotted" read_only="true" type="integer"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Comments" max_length="4000" name="comments" type="journal_input"/>
         <element attributes="encode_utf8=false" default="javascript:gs.getUserID()" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Created by" max_length="32" name="created_by" read_only="true" reference="sys_user" type="reference" use_dynamic_default="true"/>
         <element attributes="encode_utf8=false" label="Created by Manager" max_length="32" name="created_by_manager" read_only="true" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Dates" max_length="100" name="dates" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Days" max_length="40" name="days" read_only="true" type="string"/>
         <element attributes="encode_utf8=false" label="Department" max_length="32" name="department" read_only="true" reference="cmn_department" type="reference"/>
-        <element label="Difference" max_length="40" name="difference" type="integer"/>
+        <element label="Difference" max_length="40" name="difference" read_only="true" type="integer"/>
         <element label="Duration" max_length="40" name="duration" read_only="true" type="glide_duration"/>
         <element label="Email ID" max_length="40" name="email_id" read_only="true" type="email"/>
         <element attributes="edge_encryption_enabled=true" label="Emp ID" max_length="100" name="emp_id" read_only="true" type="string"/>
@@ -43,7 +43,7 @@
                 <element inactive="true" inactive_on_update="true" label="Not Applicable" sequence="3" value="4"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" choice="1" default="1" label="Workflow State" max_length="100" name="workflow_state" type="string">
+        <element attributes="edge_encryption_enabled=true" choice="1" default="1" label="Workflow State" max_length="100" name="workflow_state" read_only="true" type="string">
             <choice>
                 <element inactive_on_update="false" label="Draft" sequence="0" value="1"/>
                 <element inactive_on_update="false" label="Pending Approval" sequence="1" value="2"/>

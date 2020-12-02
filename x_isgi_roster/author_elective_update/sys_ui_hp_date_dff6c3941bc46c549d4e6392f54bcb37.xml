@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_hp_date">
+    <sys_ui_hp_date action="DELETE">
+        <date_field>roster_start_date</date_field>
+        <date_table>x_isgi_roster_plan</date_table>
+        <publisher_reference display_value="Month">3da60b541bc46c549d4e6392f54bcb32</publisher_reference>
+        <sys_class_name>sys_ui_hp_date</sys_class_name>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-10-20 12:28:52</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>dff6c3941bc46c549d4e6392f54bcb37</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>3da60b541bc46c549d4e6392f54bcb32</sys_name>
+        <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
+        <sys_update_name>sys_ui_hp_date_dff6c3941bc46c549d4e6392f54bcb37</sys_update_name>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-10-20 12:28:52</sys_updated_on>
+    </sys_ui_hp_date>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</application>
+        <file_path/>
+        <instance_id>69a78f219b99cb447ac36b8af359ff47</instance_id>
+        <instance_name>isggoverndev4</instance_name>
+        <name>sys_ui_hp_date_dff6c3941bc46c549d4e6392f54bcb37</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_hp_date">
+    <sys_ui_hp_date action="INSERT_OR_UPDATE">
+        <date_field>roster_start_date</date_field>
+        <date_table>x_isgi_roster_plan</date_table>
+        <publisher_reference display_value="Month">3da60b541bc46c549d4e6392f54bcb32</publisher_reference>
+        <sys_class_name>sys_ui_hp_date</sys_class_name>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-10-20 12:28:52</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>dff6c3941bc46c549d4e6392f54bcb37</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>3da60b541bc46c549d4e6392f54bcb32</sys_name>
+        <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
+        <sys_update_name>sys_ui_hp_date_dff6c3941bc46c549d4e6392f54bcb37</sys_update_name>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-10-20 12:28:52</sys_updated_on>
+    </sys_ui_hp_date>
+</record_update>]]></payload>
+        <payload_hash>-2027262544</payload_hash>
+        <record_name>3da60b541bc46c549d4e6392f54bcb32</record_name>
+        <reverted_from/>
+        <source>509da5f01b1c6410af1ef436464bcb09</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-11-03 05:31:20</sys_created_on>
+        <sys_id>cfbd69341b1c6410af1ef436464bcb7d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1758c96944d0000001</sys_recorded_at>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-11-03 05:31:20</sys_updated_on>
+        <type>Interactive Filter Date</type>
+        <update_guid>0fbd69344a1c6410250d18afdf12ad7d</update_guid>
+        <update_guid_history>0fbd69344a1c6410250d18afdf12ad7d:0,479da9f0731c6410c69e79f3d5b9945d:-661694974,f022a13c07986410d5343b9690d9f7cf:0,e402a5f85998641031424616a431c4d8:-661694974,7eb125b846986410faee3e890b6c7071:0,f191257897986410aeb16490e3eeabd3:-661694974,a20787547dc46c544e72bab31b4b3473:1047715318</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-12-02 03:34:58</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_ui_hp_date">sys_ui_hp_date</sys_db_object>
+        <sys_id>06742a5c3dd1411c87b5d544eee71c04</sys_id>
+        <sys_metadata>dff6c3941bc46c549d4e6392f54bcb37</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>3da60b541bc46c549d4e6392f54bcb32</sys_name>
+        <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
+        <sys_scope_delete display_value="">94aba01e32774c00ad01831d23410000</sys_scope_delete>
+        <sys_update_name>sys_ui_hp_date_dff6c3941bc46c549d4e6392f54bcb37</sys_update_name>
+        <sys_update_version display_value="sys_ui_hp_date_dff6c3941bc46c549d4e6392f54bcb37">cfbd69341b1c6410af1ef436464bcb7d</sys_update_version>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-12-02 03:34:58</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
