@@ -12,7 +12,7 @@
         <element label="Shared Seat Fill %" max_length="40" name="shared_seat_fill_per" read_only="true" type="integer"/>
         <element label="SLC" max_length="32" name="slc" reference="sys_user" type="reference"/>
         <element label="Total Actual Seats" max_length="40" name="total_actual_seats" read_only="true" type="integer"/>
-        <element label="Total Budget Seats" max_length="40" name="total_budget_seats" read_only="true" type="integer"/>
+        <element label="Total Budget Seats" max_length="40" name="total_budget_seats" type="integer"/>
         <index name="index">
             <element name="slc"/>
         </index>

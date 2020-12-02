@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_isgi_roster_plan</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Check Values</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+dupCheck();
+	
+function Endates(){	
+var EndDate = [];
+var gr = new GlideRecord('x_isgi_roster_plan');
+gr.addQuery('name',current.name);
+gr.query();
+while(gr.next())
+{	
+EndDate=''+gr.end_date;
+		
+}
+//var ED= EndDate.join(',');
+gs.addInfoMessage("End Date:  " + EnDate);	
+}	
+
+function StartDates(){	
+var StartDates = [];
+var gr1 = new GlideRecord('x_isgi_roster_plan');
+gr1.addQuery('name',current.name);
+gr1.query();
+while(gr1.next())
+{	
+StartDates.push(gr1.roster_start_date.toString());
+		
+}
+var SD= StartDates.join(',');
+//gs.addInfoMessage("Start Date :   " + SD);	
+}	
+
+function dupCheck(){
+StartDates();	
+Endates();	
+var dup = new GlideRecord('x_isgi_roster_plan');
+	dup.addQuery('name',current.name);
+	dup.addQuery('roster_start_date',"IN",SD);
+	dup.addOrCondition('end_date',"IN",ED);
+	gs.addInfoMessage(SD);
+	gs.addInfoMessage(ED);
+	dup.query();
+	var recordsCount = dup.getRowCount();
+	gs.addInfoMessage(recordsCount);
+	while(dup.next()){
+	gs.addErrorMessage('A record already exists');
+	current.setAbortAction(true);
+	}
+	}
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-11-17 04:46:51</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9578655d1b68e410af1ef436464bcbf3</sys_id>
+        <sys_mod_count>87</sys_mod_count>
+        <sys_name>Check Values</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
+        <sys_update_name>sys_script_9578655d1b68e410af1ef436464bcbf3</sys_update_name>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-11-23 08:04:41</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=9578655d1b68e410af1ef436464bcbf3"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</application>
+        <file_path/>
+        <instance_id>69a78f219b99cb447ac36b8af359ff47</instance_id>
+        <instance_name>isggoverndev4</instance_name>
+        <name>sys_script_9578655d1b68e410af1ef436464bcbf3</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_isgi_roster_plan&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Check Values&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+dupCheck();
+	
+function Endates(){	
+var EndDate = [];
+var gr = new GlideRecord('x_isgi_roster_plan');
+gr.addQuery('name',current.name);
+gr.query();
+while(gr.next())
+{	
+EndDate=''+gr.end_date;
+		
+}
+//var ED= EndDate.join(',');
+gs.addInfoMessage("End Date:  " + EnDate);	
+}	
+
+function StartDates(){	
+var StartDates = [];
+var gr1 = new GlideRecord('x_isgi_roster_plan');
+gr1.addQuery('name',current.name);
+gr1.query();
+while(gr1.next())
+{	
+StartDates.push(gr1.roster_start_date.toString());
+		
+}
+var SD= StartDates.join(',');
+//gs.addInfoMessage("Start Date :   " + SD);	
+}	
+
+function dupCheck(){
+StartDates();	
+Endates();	
+var dup = new GlideRecord('x_isgi_roster_plan');
+	dup.addQuery('name',current.name);
+	dup.addQuery('roster_start_date',"IN",SD);
+	dup.addOrCondition('end_date',"IN",ED);
+	gs.addInfoMessage(SD);
+	gs.addInfoMessage(ED);
+	dup.query();
+	var recordsCount = dup.getRowCount();
+	gs.addInfoMessage(recordsCount);
+	while(dup.next()){
+	gs.addErrorMessage('A record already exists');
+	current.setAbortAction(true);
+	}
+	}
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;mohamed.rafiulla@isg-one.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-17 04:46:51&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;9578655d1b68e410af1ef436464bcbf3&lt;/sys_id&gt;&lt;sys_mod_count&gt;87&lt;/sys_mod_count&gt;&lt;sys_name&gt;Check Values&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="roster" source="x_isgi_roster"&gt;3f44a5b11b739c149d4e6392f54bcbbf&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="roster"&gt;3f44a5b11b739c149d4e6392f54bcbbf&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_9578655d1b68e410af1ef436464bcbf3&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;mohamed.rafiulla@isg-one.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-23 08:04:41&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=9578655d1b68e410af1ef436464bcbf3"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1372163576</payload_hash>
+        <record_name>Check Values</record_name>
+        <reverted_from/>
+        <source>c2cd25bc1bd86410af1ef436464bcb43</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-11-23 08:04:42</sys_created_on>
+        <sys_id>50a055571ba4a450af1ef436464bcb0d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>175f4222db70000001</sys_recorded_at>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-11-23 08:04:42</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>94a055578fa4a450fb842bf3c0f8580c</update_guid>
+        <update_guid_history>94a055578fa4a450fb842bf3c0f8580c:-1372163576,9870d553eaa4a45048a781eff014a7cd:1124241072,12001513c5a4a4505820683481c35643:-18822260,189f059f8e64a450255c025e4cf4a75a:-678101026,e96f01df5464a450e0f71ca3443c4041:1983084683,d3ee059f1764a45005b19310a5c91b4c:-382252461,0a6e4dd3fb64a4502ed7c797c048bd04:-1104921632,8f69c1179264a4501b04c358ad9d45f2:432102448,a31941d3ae64a450e72dde58a9802205:1774994811,e64a54b5b22ca8105b5739f85b1e5168:689194856,6081761d60a028108de270c7f02b6644:-1204730373,c6c0b25daca0281030734053f3a0109b:1774994811,d730721d72a02810e2d40d3a3fe5a77c:-934734895,03ff221d49a02810d708e748d64d7826:-1146447309,6b9fa699a9a02810e7c79342976ca0b1:-1241288277,723dea5508a0281082e4adf4b2d38299:-757947114,f21dea556aa0281015c174919091ba17:814129928,6ceca25501a028100aefeaaf6b2a23d8:448969164,51dc62551ba028105b2daf5db330ae27:1018476485,fcbc225535a0281066788517d5cbf42c:-131988742,7f8cae15bca02810623d2ea65e909012:55976420,d87ca2d1b9a0281015967ca7355df311:-281292628,141c62d142a02810693a0390a4926ae9:834145167,bdfb66d13ba0281026e152c57d00ce4d:2020819069,391d5a99af2028109799f2a39e6433c6:-1006494761,05fcde59a4202810e64d4a19e81ae2c5:363364729,083c9a19a22028100b645f243a3457c3:-698030695,6e0c56199d202810002d85f122034723:882080862,389bd2559b202810a23dc0e3c6a075ce:-1181868788,922b1a1586202810828577a6244af285:459214107,ebd99291e72028101fd0838f68942489:-286656956,3da952914120281054b6f3e0f6ae4197:2067239543,d3491e11b9202810d08541f1fed6d717:-1097199964,2d09da11a22028102d514fa008b494ee:-1115108739,dee85a11b820281011042f7472833e54:1807113167,b398d2ddf6ece410e14c1f646031f099:-792066359,0848561d09ece410c5c3ec7bd7582dfd:-470800638,72479ad97bece410ac5e1f3ddef76a68:1589643454,a1179ad93fece4102c9d7a50071ecc04:685666751,69f65ed5cbece410be02a36670140359:1589643454,2bd696d9deece41083e49d2721d22e1c:-1586187621,a93616951dece4108d05ba31811dc22a:1517194811,eef5de5566ece410b4b74282bee79ee0:2073415445,6865121582ece410df3a78e2f17216b3:1965929010,fe259ed1e6ece410d053600bd1be40af:-401219443,c8e4d6d1ddece410be81a3522ce13806:-747601175,5a941a5170ece4101bba38205bf95054:228995290,10c3dadd86ace410aed46dd58ba178c6:687566111,21539eddd0ace41092c6240586cbf26e:1074015002,60c2d2ddfcace4108095951eeba56128:1374627062,7f4b86d95e6ce4106f43365a0c2eae37:-1413781715,a43b86d9fe6ce410ba31ce5173738706:1499094623,4464c691766ce410fe77012a1adbaab2:582358822,c7448611d56ce410ee1e92e87daa5ea0:-696182105,e624c2dd032ce4107fff8c926ab73103:1976843406,7c938611486ce410feffb84e10cb2398:582358822,351386dd012ce410b56541e71f402d07:-1565156049,c6e202dd172ce410568e8dfa0512d037:-1154194085,b292ca5dc82ce410fe301f704356330f:582358822,3a52429d442ce410d2dfdb72b28f7440:809980117,8102465d2f2ce4104f25a357dfdc05b6:-233845604,98e10a5d0a2ce41083c96db983ec4026:-26503645,b2a1ce1df02ce41047013bb987f241e9:-733407018,28710e1dd72ce41023b63986ea364fc3:-374566803,4eb08ed96e2ce41066824455ca368410:-144854336,5060ca99cc2ce41020bb90c5155bb0fb:459362782,b7200e99322ce4104b4b205c30840573:-762308581,2a0082996a2ce4101fc9b8dbecb39b4d:1761340951,e0ff7199f92ce41033a22ec7e70031c5:-998319400,dcbf35595b2ce410c6fb150bde8e5dfb:621954916,0e6f7559052ce4104f941c0e55dcdc74:-1070967532,374f3159fa2ce4102bad773146531cae:-1311102501,720ff119152ce4101a55b7b1a508535b:291384494,2b4b71512f2ce4101bcc43a98040915b:-1878908543,573bb911452ce4109508765003f88194:-1121068310,6f0b7511082ce4104f8b8a12c3d5c8a5:-1233211462,bfba79dda3e8e410173244d121de5f7e:1326661917,645a31dda0e8e410dd206ee24a6b97b0:-1315373088,823afd9df5e8e4105d0f7ec8e83863a3:-813908897,cc09351d9ce8e4108b1d11535eb75027:-1450519089,79e8bdd907e8e410db3af5fae9d8f2dd:-2105595785,0e52f5dd91a8e410b62e3067dbb81194:1398740156,62cf61d973a8e41045bfff15528edafc:-2006654491,c9bfad9900a8e410f14ca28830d3bf74:-2105595785,7f8f699957a8e4107c77cc8621501129:-1878998226,a57c651535a8e410952057bc196f31a5:-762487058,824c61152fa8e4102e0e98fcc4d7628c:-1450519089,7cfb65d1b4a8e410f2f922f159093af6:-1160610564,c07aaddd8968e410fca8e6212b4a6cfb:-1859747178,af0a611163a8e410ae92729e2a511d40:-71905809,f3c9695d1268e410716fac70518b6165:1870850725</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-11-23 08:11:28</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>879d4a8b4c6a4264bd742016f51ba101</sys_id>
+        <sys_metadata>9578655d1b68e410af1ef436464bcbf3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Check Values</sys_name>
+        <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
+        <sys_parent display_value="Roster Plan">6c5521351b739c149d4e6392f54bcbc1</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
+        <sys_scope_delete display_value="">94aba01e32774c00ad01831d23410000</sys_scope_delete>
+        <sys_update_name>sys_script_9578655d1b68e410af1ef436464bcbf3</sys_update_name>
+        <sys_update_version display_value="sys_script_9578655d1b68e410af1ef436464bcbf3">50a055571ba4a450af1ef436464bcb0d</sys_update_version>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-11-23 08:11:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

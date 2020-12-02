@@ -59,7 +59,7 @@
 <tr>
 <td style="border-top: 6px solid #fff; border-bottom: 6px solid #fff;">
 <div><span style="font-size: 10pt; font-family: verdana, geneva;">&nbsp;</span></div>
-<div><span style="font-size: 10pt; font-family: verdana, geneva;">A new roster requested for your approval. Please take neccassary action.</span></div>
+<div><span style="font-size: 10pt;">A new roster has been created by your team member and waiting for your approval. Please take necessary action.</span></div>
 </td>
 </tr>
 <tr>
@@ -166,7 +166,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7d1bc1e91b94e810af1ef436464bcbff</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Pending Approval</sys_name>
         <sys_overrides/>
         <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
@@ -175,7 +175,7 @@
         <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
         <sys_update_name>sysevent_email_action_7d1bc1e91b94e810af1ef436464bcbff</sys_update_name>
         <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-        <sys_updated_on>2020-11-05 11:12:10</sys_updated_on>
+        <sys_updated_on>2020-11-24 06:12:48</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>

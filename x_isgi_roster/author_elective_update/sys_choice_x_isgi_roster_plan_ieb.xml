@@ -118,7 +118,7 @@
             <element>ieb</element>
             <hint/>
             <inactive>false</inactive>
-            <label>One Platform:Glob Mark</label>
+            <label>One Platform:Glob Mark, IS</label>
             <language>en</language>
             <name>x_isgi_roster_plan</name>
             <sequence>5</sequence>
@@ -127,17 +127,17 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>4a2803181bc46c549d4e6392f54bcb60</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>2</sys_mod_count>
             <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-            <sys_updated_on>2020-10-20 12:33:45</sys_updated_on>
-            <value>One Platform:Glob Mark</value>
+            <sys_updated_on>2020-12-02 01:01:28</sys_updated_on>
+            <value>6</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>ieb</element>
             <hint/>
             <inactive>false</inactive>
-            <label>One Platform:Finance</label>
+            <label>One Platform:Finance,IT,Legal</label>
             <language>en</language>
             <name>x_isgi_roster_plan</name>
             <sequence>7</sequence>
@@ -146,10 +146,10 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>4a2803181bc46c549d4e6392f54bcb61</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>2</sys_mod_count>
             <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-            <sys_updated_on>2020-10-20 12:33:45</sys_updated_on>
-            <value>One Platform:Finance</value>
+            <sys_updated_on>2020-12-02 01:01:12</sys_updated_on>
+            <value>7</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>

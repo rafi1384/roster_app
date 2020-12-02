@@ -30,48 +30,19 @@
         <script><![CDATA[(function executeRule(current, previous /*null when async*/){
 
 getFixedSeats();	
-getSharedSeats();
-	
+
 function getFixedSeats(){
 var gr = new GlideRecord('x_isgi_roster_plan');
 gr.addQuery('slc',current.slc);
 gr.addQuery('month',current.month_value);
-gr.addQuery('type','1');
-gr.addQuery('workflow_state','3');
 gr.query();
 var Fixed = gr.getRowCount();
 //gs.addInfoMessage(Fixed);
-current.actual_fixed_seats=Fixed;	
+current.total_actual_seats=Fixed;	
 }	
 	
-function getSharedSeats(){
-var gr = new GlideRecord('x_isgi_roster_plan');
-gr.addQuery('slc',current.slc);
-gr.addQuery('month',current.month_value);
-gr.addQuery('type','2');
-gr.addQuery('workflow_state','3');	
-gr.query();
-var Shared = gr.getRowCount();
-//gs.addInfoMessage(Shared);
-current.actual_shared_seats=Shared;	
-}		
-
-
-current.total_budget_seats=totalbudget;	
-var FixedValue = current.actual_fixed_seats;
-var SharedValue = current.actual_shared_seats;
-var total = FixedValue+SharedValue;
-current.total_actual_seats=total;
-var FixedBudget = current.fixed_seats;
-var SharedBudget = current.shared_seats;
-var TotalBudgetSeats=FixedBudget+SharedBudget;	
-current.total_budget_seats=TotalBudgetSeats;	
-var Fixed_fill = (FixedValue/FixedBudget)*100;
-var Shared_fill = (SharedValue/SharedBudget)*100;
-current.fixed_seat_fill_per=Fixed_fill;
-current.shared_seat_fill_per=Shared_fill;
-var totalbudget =current.total_budget_seats;
-var totalactual = current.total_actual_seats;
+var totalbudget = current.total_budget_seats;
+var totalactual = current.total_actual_seats;	
 var totalseatfill = (totalactual/totalbudget)*100;
 current.seat_fill_per=totalseatfill;	
 
@@ -83,7 +54,7 @@ current.seat_fill_per=totalseatfill;
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>648a19201bd8e010af1ef436464bcb0f</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_name>Update Aggregation</sys_name>
         <sys_overrides/>
         <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
@@ -92,7 +63,7 @@ current.seat_fill_per=totalseatfill;
         <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
         <sys_update_name>sys_script_648a19201bd8e010af1ef436464bcb0f</sys_update_name>
         <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-        <sys_updated_on>2020-11-02 13:04:50</sys_updated_on>
+        <sys_updated_on>2020-12-01 12:39:04</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

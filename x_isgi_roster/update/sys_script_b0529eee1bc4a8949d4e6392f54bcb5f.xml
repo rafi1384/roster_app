@@ -19,7 +19,7 @@
         <is_rest>false</is_rest>
         <message/>
         <name>Update Month</name>
-        <order>100</order>
+        <order>20</order>
         <priority>100</priority>
         <rest_method/>
         <rest_method_text/>
@@ -44,7 +44,7 @@ var gDT = new GlideDateTime(current.roster_start_date);
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b0529eee1bc4a8949d4e6392f54bcb5f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Update Month</sys_name>
         <sys_overrides/>
         <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
@@ -53,7 +53,7 @@ var gDT = new GlideDateTime(current.roster_start_date);
         <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
         <sys_update_name>sys_script_b0529eee1bc4a8949d4e6392f54bcb5f</sys_update_name>
         <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-        <sys_updated_on>2020-10-27 08:26:29</sys_updated_on>
+        <sys_updated_on>2020-12-01 12:40:47</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

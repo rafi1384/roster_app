@@ -4,13 +4,13 @@
             <element>month</element>
             <position>0</position>
             <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
-            <sys_created_on>2020-11-02 10:23:12</sys_created_on>
-            <sys_id>2cf6a9681b1ce010af1ef436464bcb69</sys_id>
+            <sys_created_on>2020-12-01 12:35:55</sys_created_on>
+            <sys_id>9b6b9f311bb4e890af1ef436464bcb14</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_isgi_roster_allocation" sys_domain="global" view="Default view">7fa604301b44ec549d4e6392f54bcbdc</sys_ui_section>
             <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-            <sys_updated_on>2020-11-02 10:23:12</sys_updated_on>
+            <sys_updated_on>2020-12-01 12:35:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>slc</element>
             <position>1</position>
             <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
-            <sys_created_on>2020-11-02 10:23:12</sys_created_on>
-            <sys_id>a4f6a9681b1ce010af1ef436464bcb6a</sys_id>
+            <sys_created_on>2020-12-01 12:35:55</sys_created_on>
+            <sys_id>176b9f311bb4e890af1ef436464bcb15</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_isgi_roster_allocation" sys_domain="global" view="Default view">7fa604301b44ec549d4e6392f54bcbdc</sys_ui_section>
             <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-            <sys_updated_on>2020-11-02 10:23:12</sys_updated_on>
+            <sys_updated_on>2020-12-01 12:35:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>.split</element>
             <position>2</position>
             <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
-            <sys_created_on>2020-11-02 10:23:12</sys_created_on>
-            <sys_id>2cf6a9681b1ce010af1ef436464bcb6a</sys_id>
+            <sys_created_on>2020-12-01 12:35:55</sys_created_on>
+            <sys_id>9b6b9f311bb4e890af1ef436464bcb15</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_isgi_roster_allocation" sys_domain="global" view="Default view">7fa604301b44ec549d4e6392f54bcbdc</sys_ui_section>
             <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-            <sys_updated_on>2020-11-02 10:23:12</sys_updated_on>
+            <sys_updated_on>2020-12-01 12:35:55</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>month_value</element>
             <position>3</position>
             <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
-            <sys_created_on>2020-11-02 10:23:12</sys_created_on>
-            <sys_id>a0f6a9681b1ce010af1ef436464bcb6b</sys_id>
+            <sys_created_on>2020-12-01 12:35:55</sys_created_on>
+            <sys_id>136b9f311bb4e890af1ef436464bcb16</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_isgi_roster_allocation" sys_domain="global" view="Default view">7fa604301b44ec549d4e6392f54bcbdc</sys_ui_section>
             <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-            <sys_updated_on>2020-11-02 10:23:12</sys_updated_on>
+            <sys_updated_on>2020-12-01 12:35:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>.end_split</element>
             <position>4</position>
             <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
-            <sys_created_on>2020-11-02 10:23:12</sys_created_on>
-            <sys_id>28f6a9681b1ce010af1ef436464bcb6b</sys_id>
+            <sys_created_on>2020-12-01 12:35:55</sys_created_on>
+            <sys_id>976b9f311bb4e890af1ef436464bcb16</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_isgi_roster_allocation" sys_domain="global" view="Default view">7fa604301b44ec549d4e6392f54bcbdc</sys_ui_section>
             <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-            <sys_updated_on>2020-11-02 10:23:12</sys_updated_on>
+            <sys_updated_on>2020-12-01 12:35:55</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
@@ -74,167 +74,83 @@
             <element>.begin_split</element>
             <position>5</position>
             <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
-            <sys_created_on>2020-11-02 10:23:12</sys_created_on>
-            <sys_id>60f6a9681b1ce010af1ef436464bcbaa</sys_id>
+            <sys_created_on>2020-12-01 12:35:55</sys_created_on>
+            <sys_id>1f6b9f311bb4e890af1ef436464bcb16</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_isgi_roster_allocation" sys_domain="global" view="Default view">7fa604301b44ec549d4e6392f54bcbdc</sys_ui_section>
             <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-            <sys_updated_on>2020-11-02 10:23:12</sys_updated_on>
+            <sys_updated_on>2020-12-01 12:35:55</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>fixed_seats</element>
+            <element>total_budget_seats</element>
             <position>6</position>
             <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
-            <sys_created_on>2020-11-02 10:23:12</sys_created_on>
-            <sys_id>e4f6a9681b1ce010af1ef436464bcbaa</sys_id>
+            <sys_created_on>2020-12-01 12:35:55</sys_created_on>
+            <sys_id>936b9f311bb4e890af1ef436464bcb17</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_isgi_roster_allocation" sys_domain="global" view="Default view">7fa604301b44ec549d4e6392f54bcbdc</sys_ui_section>
             <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-            <sys_updated_on>2020-11-02 10:23:12</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>shared_seats</element>
-            <position>7</position>
-            <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
-            <sys_created_on>2020-11-02 10:23:12</sys_created_on>
-            <sys_id>6cf6a9681b1ce010af1ef436464bcbaa</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_isgi_roster_allocation" sys_domain="global" view="Default view">7fa604301b44ec549d4e6392f54bcbdc</sys_ui_section>
-            <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-            <sys_updated_on>2020-11-02 10:23:12</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>total_budget_seats</element>
-            <position>8</position>
-            <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
-            <sys_created_on>2020-11-02 10:23:12</sys_created_on>
-            <sys_id>e0f6a9681b1ce010af1ef436464bcbab</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_isgi_roster_allocation" sys_domain="global" view="Default view">7fa604301b44ec549d4e6392f54bcbdc</sys_ui_section>
-            <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-            <sys_updated_on>2020-11-02 10:23:12</sys_updated_on>
+            <sys_updated_on>2020-12-01 12:35:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>9</position>
+            <position>7</position>
             <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
-            <sys_created_on>2020-11-02 10:23:12</sys_created_on>
-            <sys_id>68f6a9681b1ce010af1ef436464bcbab</sys_id>
+            <sys_created_on>2020-12-01 12:35:55</sys_created_on>
+            <sys_id>1b6b9f311bb4e890af1ef436464bcb17</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_isgi_roster_allocation" sys_domain="global" view="Default view">7fa604301b44ec549d4e6392f54bcbdc</sys_ui_section>
             <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-            <sys_updated_on>2020-11-02 10:23:12</sys_updated_on>
+            <sys_updated_on>2020-12-01 12:35:55</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>actual_fixed_seats</element>
-            <position>10</position>
-            <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
-            <sys_created_on>2020-11-02 10:23:12</sys_created_on>
-            <sys_id>ecf6a9681b1ce010af1ef436464bcbab</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_isgi_roster_allocation" sys_domain="global" view="Default view">7fa604301b44ec549d4e6392f54bcbdc</sys_ui_section>
-            <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-            <sys_updated_on>2020-11-02 10:23:12</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>fixed_seat_fill_per</element>
-            <position>11</position>
-            <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
-            <sys_created_on>2020-11-02 10:23:12</sys_created_on>
-            <sys_id>64f6a9681b1ce010af1ef436464bcbac</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_isgi_roster_allocation" sys_domain="global" view="Default view">7fa604301b44ec549d4e6392f54bcbdc</sys_ui_section>
-            <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-            <sys_updated_on>2020-11-02 10:23:12</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>actual_shared_seats</element>
-            <position>12</position>
-            <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
-            <sys_created_on>2020-11-02 10:23:12</sys_created_on>
-            <sys_id>e8f6a9681b1ce010af1ef436464bcbac</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_isgi_roster_allocation" sys_domain="global" view="Default view">7fa604301b44ec549d4e6392f54bcbdc</sys_ui_section>
-            <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-            <sys_updated_on>2020-11-02 10:23:12</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>shared_seat_fill_per</element>
-            <position>13</position>
-            <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
-            <sys_created_on>2020-11-02 10:23:12</sys_created_on>
-            <sys_id>60f6a9681b1ce010af1ef436464bcbad</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_isgi_roster_allocation" sys_domain="global" view="Default view">7fa604301b44ec549d4e6392f54bcbdc</sys_ui_section>
-            <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-            <sys_updated_on>2020-11-02 10:23:12</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
             <element>total_actual_seats</element>
-            <position>14</position>
+            <position>8</position>
             <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
-            <sys_created_on>2020-11-02 10:23:12</sys_created_on>
-            <sys_id>e4f6a9681b1ce010af1ef436464bcbad</sys_id>
+            <sys_created_on>2020-12-01 12:35:55</sys_created_on>
+            <sys_id>9f6b9f311bb4e890af1ef436464bcb17</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_isgi_roster_allocation" sys_domain="global" view="Default view">7fa604301b44ec549d4e6392f54bcbdc</sys_ui_section>
             <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-            <sys_updated_on>2020-11-02 10:23:12</sys_updated_on>
+            <sys_updated_on>2020-12-01 12:35:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>seat_fill_per</element>
-            <position>15</position>
+            <position>9</position>
             <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
-            <sys_created_on>2020-11-02 10:23:12</sys_created_on>
-            <sys_id>6cf6a9681b1ce010af1ef436464bcbad</sys_id>
+            <sys_created_on>2020-12-01 12:35:55</sys_created_on>
+            <sys_id>176b9f311bb4e890af1ef436464bcb18</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_isgi_roster_allocation" sys_domain="global" view="Default view">7fa604301b44ec549d4e6392f54bcbdc</sys_ui_section>
             <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-            <sys_updated_on>2020-11-02 10:23:12</sys_updated_on>
+            <sys_updated_on>2020-12-01 12:35:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>counter</element>
-            <position>16</position>
+            <position>10</position>
             <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
-            <sys_created_on>2020-11-02 11:51:22</sys_created_on>
-            <sys_id>d82bf9a01bdce010af1ef436464bcb1c</sys_id>
+            <sys_created_on>2020-12-01 12:35:55</sys_created_on>
+            <sys_id>9b6b9f311bb4e890af1ef436464bcb18</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_isgi_roster_allocation" sys_domain="global" view="Default view">7fa604301b44ec549d4e6392f54bcbdc</sys_ui_section>
             <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-            <sys_updated_on>2020-11-02 11:51:22</sys_updated_on>
+            <sys_updated_on>2020-12-01 12:35:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
