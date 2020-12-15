@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>true</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>false</active>
+        <add_message>true</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_isgi_roster_plan</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_isgi_roster_plan">workflow_state=1^seat_fill_per=100^active=true^EQ<item display_value="Booking InProgress" endquery="false" field="workflow_state" goto="false" newquery="false" operator="=" or="false" value="1"/>
+            <item endquery="false" field="seat_fill_per" goto="false" newquery="false" operator="=" or="false" value="100"/>
+            <item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message><![CDATA[<p>Please contact SLC to Proceed</p>]]></message>
+        <name>Check for remaing seats</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/){
+current.setAbortAction();
+gs.addErrorMessage('Seats are full, please raise a additional seat request');
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-11-02 11:56:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>894bb9e01bdce010af1ef436464bcb45</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>Check for remaing seats</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
+        <sys_update_name>sys_script_894bb9e01bdce010af1ef436464bcb45</sys_update_name>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-12-14 10:58:16</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=894bb9e01bdce010af1ef436464bcb45"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</application>
+        <file_path/>
+        <instance_id>69a78f219b99cb447ac36b8af359ff47</instance_id>
+        <instance_name>isggoverndev4</instance_name>
+        <name>sys_script_894bb9e01bdce010af1ef436464bcb45</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;true&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;false&lt;/active&gt;&lt;add_message&gt;true&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_isgi_roster_plan&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="x_isgi_roster_plan"&gt;workflow_state=1^seat_fill_per=100^active=true^EQ&lt;item display_value="Booking InProgress" endquery="false" field="workflow_state" goto="false" newquery="false" operator="=" or="false" value="1"/&gt;&lt;item endquery="false" field="seat_fill_per" goto="false" newquery="false" operator="=" or="false" value="100"/&gt;&lt;item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message&gt;&lt;![CDATA[&lt;p&gt;Please contact SLC to Proceed&lt;/p&gt;]]&gt;&lt;/message&gt;&lt;name&gt;Check for remaing seats&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/){
+current.setAbortAction();
+gs.addErrorMessage('Seats are full, please raise a additional seat request');
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;mohamed.rafiulla@isg-one.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-02 11:56:18&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;894bb9e01bdce010af1ef436464bcb45&lt;/sys_id&gt;&lt;sys_mod_count&gt;20&lt;/sys_mod_count&gt;&lt;sys_name&gt;Check for remaing seats&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="roster" source="x_isgi_roster"&gt;3f44a5b11b739c149d4e6392f54bcbbf&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="roster"&gt;3f44a5b11b739c149d4e6392f54bcbbf&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_894bb9e01bdce010af1ef436464bcb45&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;mohamed.rafiulla@isg-one.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-12-14 10:58:16&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=894bb9e01bdce010af1ef436464bcb45"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-870690517</payload_hash>
+        <record_name>Check for remaing seats</record_name>
+        <reverted_from/>
+        <source>dd6aaa8e1b306c90af1ef436464bcb70</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-12-14 10:58:16</sys_created_on>
+        <sys_id>3fb1824a1b09a410af1ef436464bcb1f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17660e6a4fc0000001</sys_recorded_at>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-12-14 10:58:16</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>73b1824a1c09a410604d02cce63ad01f</update_guid>
+        <update_guid_history>73b1824a1c09a410604d02cce63ad01f:-870690517,6f8002866d09a41033d2ae0b597e438e:-1700091426,7c400286be09a410e52041c973fe8985:723493397,66ae3d02c809a410125a9059ea4419d8:443696479,cd5ced4e4a45a41072780ef6c768dee5:1770849132,393ce18aa345a410e8d68cf3c4b21947:97503581,afe0b00e054d641052990b03cf282ca1:99125192,33aed6b8988da0144ca7c370cde1d995:1007014627,2ebb4e709f0da01409d29536ab17c49a:-112281360,679b8a70e50da014f213de497bd347d3:198621763,b1fa4a30ef0da0146d71600513e0d5f1:-112281360,24ea8630000da014c0f69bd649751c7d:-437516743,bc630630ffc9a0142d6675ba24a37919:-710750205,49524e7c5789a014288c4e4a186f44f3:1866702358,2de18a70aa89a0144ccafb28d0cebb07:765790779,7d57468433c92cd06c1117857a12f7f3:-236435909,58b40e00bbc92cd0fce719c9838ec9ae:-1504804545,ce5a264211706c904ebe573201211d45:0,fc3aeece99306c90f171a2c4c971dc9f:13943036,76b893b96874e89009470ef5e86c0765:2021351920,96bd2934551c6410844c68c1648bb68a:0,b29da9f0ff1c6410efd5679fb5f54510:-36394281,4c22613c0b9864107c001d9c97a026db:0,5c02a5f80a986410a20ea78741eb787e:-36394281,9eb1e1b85f98641096bd47d3f2ddd349:0,9591e17831986410b32579f3a41e8bf2:-36394281,ad1c86e0e0502410f18b7100e4402677:-184469990,65fc7d64bfdce010f63c5ce92138471a:-442719696,a84c35e0d8dce010b07ac6955f69b672:-1629188469</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-12-14 10:59:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>1ab9cf91b044490c935537314f3ae290</sys_id>
+        <sys_metadata>894bb9e01bdce010af1ef436464bcb45</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Check for remaing seats</sys_name>
+        <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
+        <sys_parent display_value="Roster Plan">6c5521351b739c149d4e6392f54bcbc1</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
+        <sys_scope_delete display_value="">94aba01e32774c00ad01831d23410000</sys_scope_delete>
+        <sys_update_name>sys_script_894bb9e01bdce010af1ef436464bcb45</sys_update_name>
+        <sys_update_version display_value="sys_script_894bb9e01bdce010af1ef436464bcb45">3fb1824a1b09a410af1ef436464bcb1f</sys_update_version>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-12-14 10:59:16</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

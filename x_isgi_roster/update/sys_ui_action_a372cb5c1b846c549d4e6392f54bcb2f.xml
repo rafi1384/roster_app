@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
         <action_name>roster_submit_approve</action_name>
-        <active>false</active>
+        <active>true</active>
         <client>false</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
 
 }]]></client_script_v2>
         <comments/>
-        <condition>current.workflow_state=="2" &amp;&amp; current.manager==gs.getUserID()</condition>
+        <condition>current.workflow_state=="6" &amp;&amp; current.to_slc==gs.getUserID()</condition>
         <form_action>true</form_action>
-        <form_button>false</form_button>
+        <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
         <form_context_menu>false</form_context_menu>
-        <form_link>true</form_link>
+        <form_link>false</form_link>
         <form_menu_button_v2>false</form_menu_button_v2>
         <form_style/>
         <hint/>
@@ -28,13 +28,36 @@
         <name>Approve</name>
         <onclick/>
         <order>100</order>
-        <script><![CDATA[current.workflow_state="3";
+        <script><![CDATA[current.workflow_state="5";
+current.active=true;
 current.update();
-action.setRedirectURL(current);]]></script>
+reduceAllocation(current.to_slc);
+addAllocation(current.slc);
+action.setRedirectURL(current);
+
+function reduceAllocation(user){
+	var gr = new GlideRecord('x_isgi_roster_allocation');
+	gr.addQuery('slc',user);
+	gr.query();
+	if (gr.next()){
+		gr.total_budget_seats=gr.total_budget_seats-1;
+		gr.update();
+	}
+}
+	
+	function addAllocation(user){
+	var gr = new GlideRecord('x_isgi_roster_allocation');
+	gr.addQuery('slc',user);
+	gr.query();
+	if (gr.next()){
+		gr.total_budget_seats=gr.total_budget_seats+1;
+		gr.update();
+	}	
+}]]></script>
         <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
-        <show_update>false</show_update>
+        <show_update>true</show_update>
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
         <sys_created_on>2020-10-20 12:08:59</sys_created_on>
@@ -42,7 +65,7 @@ action.setRedirectURL(current);]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a372cb5c1b846c549d4e6392f54bcb2f</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>Approve</sys_name>
         <sys_overrides/>
         <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
@@ -50,8 +73,8 @@ action.setRedirectURL(current);]]></script>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
         <sys_update_name>sys_ui_action_a372cb5c1b846c549d4e6392f54bcb2f</sys_update_name>
-        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-        <sys_updated_on>2020-12-01 12:59:55</sys_updated_on>
+        <sys_updated_by>ramesh.r@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-12-15 11:18:10</sys_updated_on>
         <table>x_isgi_roster_plan</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

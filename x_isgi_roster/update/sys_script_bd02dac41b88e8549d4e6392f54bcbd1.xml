@@ -22,7 +22,7 @@
         <is_rest>false</is_rest>
         <message/>
         <name>Duration</name>
-        <order>70</order>
+        <order>30</order>
         <priority>100</priority>
         <rest_method/>
         <rest_method_text/>
@@ -52,7 +52,7 @@ var value = current.duration.dateNumericValue();
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>bd02dac41b88e8549d4e6392f54bcbd1</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>Duration</sys_name>
         <sys_overrides/>
         <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
@@ -61,7 +61,7 @@ var value = current.duration.dateNumericValue();
         <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
         <sys_update_name>sys_script_bd02dac41b88e8549d4e6392f54bcbd1</sys_update_name>
         <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-        <sys_updated_on>2020-12-01 12:40:53</sys_updated_on>
+        <sys_updated_on>2020-12-10 13:47:37</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

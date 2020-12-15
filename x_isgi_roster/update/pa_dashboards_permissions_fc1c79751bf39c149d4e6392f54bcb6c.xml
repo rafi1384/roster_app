@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="pa_dashboards_permissions">
     <pa_dashboards_permissions action="INSERT_OR_UPDATE">
-        <dashboard display_value="Roster">2c9bf5751bf39c149d4e6392f54bcb9d</dashboard>
+        <dashboard display_value="Roster Dashboard - SLC View">2c9bf5751bf39c149d4e6392f54bcb9d</dashboard>
         <delete>false</delete>
         <group/>
         <identity>x_isgi_roster.admin</identity>

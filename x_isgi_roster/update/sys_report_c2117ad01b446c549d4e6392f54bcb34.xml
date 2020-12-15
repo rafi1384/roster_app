@@ -45,7 +45,7 @@
         <field>sys_created_on</field>
         <field_list/>
         <filter table="x_isgi_roster_plan">type=1^workflow_state=3^slcISNOTEMPTY<item display_value="Fixed Seat" endquery="false" field="type" goto="false" newquery="false" operator="=" or="false" value="1"/>
-            <item display_value="Completed" endquery="false" field="workflow_state" goto="false" newquery="false" operator="=" or="false" value="3"/>
+            <item display_value="Booking Rejected" endquery="false" field="workflow_state" goto="false" newquery="false" operator="=" or="false" value="3"/>
             <item endquery="false" field="slc" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
         </filter>
         <from/>

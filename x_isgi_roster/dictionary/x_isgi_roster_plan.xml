@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" label="Roster Plan" max_length="40" name="x_isgi_roster_plan" type="collection">
-        <element label="Actual Booked" max_length="40" name="actual_booked" read_only="true" type="integer"/>
-        <element label="Base Allotted" max_length="40" name="base_allotted" read_only="true" type="integer"/>
+    <element audit="true" label="Roster Plan" max_length="40" name="x_isgi_roster_plan" sizeclass="5" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" read_only="true" type="boolean"/>
+        <element default="0" label="Booked Seats" max_length="40" name="actual_booked" read_only="true" type="integer"/>
+        <element default="0" label="Allotted Seats" max_length="40" name="base_allotted" read_only="true" type="integer"/>
         <element label="Comments" max_length="4000" name="comments" type="journal_input"/>
         <element attributes="encode_utf8=false" default="javascript:gs.getUserID()" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Created by" max_length="32" name="created_by" read_only="true" reference="sys_user" type="reference" use_dynamic_default="true"/>
-        <element attributes="encode_utf8=false" label="Created by Manager" max_length="32" name="created_by_manager" read_only="true" reference="sys_user" type="reference"/>
+        <element active="false" attributes="encode_utf8=false" label="Created by Manager" max_length="32" name="created_by_manager" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Dates" max_length="100" name="dates" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Days" max_length="40" name="days" read_only="true" type="string"/>
         <element attributes="encode_utf8=false" label="Department" max_length="32" name="department" read_only="true" reference="cmn_department" type="reference"/>
-        <element label="Difference" max_length="40" name="difference" read_only="true" type="integer"/>
+        <element default="0" label="Remaining Seats" max_length="40" name="difference" read_only="true" type="integer"/>
         <element label="Duration" max_length="40" name="duration" read_only="true" type="glide_duration"/>
         <element label="Email ID" max_length="40" name="email_id" read_only="true" type="email"/>
         <element attributes="edge_encryption_enabled=true" label="Emp ID" max_length="100" name="emp_id" read_only="true" type="string"/>
@@ -33,8 +34,10 @@
         <element attributes="encode_utf8=false" default="javascript:gs.getUserID()" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Name" max_length="32" name="name" read_only="true" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference" use_dynamic_default="true"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Roster Start Date" max_length="40" name="roster_start_date" type="glide_date"/>
+        <element label="Fill Percentage" max_length="40" name="seat_fill_per" read_only="true" type="integer"/>
         <element attributes="encode_utf8=false" label="SLC" max_length="32" name="slc" read_only="true" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Team Name" mandatory="true" max_length="100" name="team_name" type="string"/>
+        <element attributes="encode_utf8=false" label="Request to SLC" max_length="32" name="to_slc" reference="sys_user" reference_qual="active=true^roles=x_isgi_roster.slc^EQ" reference_qual_condition="active=true^roles=x_isgi_roster.slc^EQ" type="reference"/>
         <element active="false" attributes="edge_encryption_enabled=true" choice="1" label="Type" max_length="40" name="type" type="string">
             <choice>
                 <element inactive_on_update="false" label="Fixed Seat" sequence="0" value="1"/>
@@ -43,13 +46,14 @@
                 <element inactive="true" inactive_on_update="true" label="Not Applicable" sequence="3" value="4"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" choice="1" default="1" label="Workflow State" max_length="100" name="workflow_state" read_only="true" type="string">
+        <element attributes="edge_encryption_enabled=true" choice="1" default="1" label="Workflow State" max_length="100" name="workflow_state" type="string">
             <choice>
-                <element inactive_on_update="false" label="Draft" sequence="0" value="1"/>
-                <element inactive_on_update="false" label="Pending Approval" sequence="1" value="2"/>
-                <element inactive_on_update="false" label="Completed" sequence="2" value="3"/>
-                <element inactive_on_update="false" label="Rejected" sequence="3" value="4"/>
-                <element inactive_on_update="false" label="Closed" sequence="4" value="5"/>
+                <element inactive_on_update="false" label="Booking InProgress" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Booking Pending" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Booking Rejected" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="Booking Cancelled" sequence="3" value="4"/>
+                <element inactive_on_update="false" label="Booked" sequence="4" value="5"/>
+                <element inactive_on_update="false" label="Allocation Request" sequence="5" value="6"/>
             </choice>
         </element>
         <index name="index">
@@ -69,6 +73,9 @@
         </index>
         <index name="index6">
             <element name="created_by_manager"/>
+        </index>
+        <index name="index7">
+            <element name="to_slc"/>
         </index>
     </element>
 </database>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_tabs">
+    <pa_tabs action="DELETE">
+        <canvas_page/>
+        <name>Roster Dashboard - S - New Tab 3</name>
+        <page/>
+        <sys_class_name>pa_tabs</sys_class_name>
+        <sys_created_by>Padmalatha.Giridhar@isg-one.com</sys_created_by>
+        <sys_created_on>2020-12-15 11:27:17</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e2f19b521bc16810af1ef436464bcb93</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Roster Dashboard - S - New Tab 3</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
+        <sys_update_name>pa_tabs_e2f19b521bc16810af1ef436464bcb93</sys_update_name>
+        <sys_updated_by>Padmalatha.Giridhar@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-12-15 11:27:17</sys_updated_on>
+    </pa_tabs>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</application>
+        <file_path/>
+        <instance_id>69a78f219b99cb447ac36b8af359ff47</instance_id>
+        <instance_name>isggoverndev4</instance_name>
+        <name>pa_tabs_e2f19b521bc16810af1ef436464bcb93</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_tabs"><pa_tabs action="INSERT_OR_UPDATE"><canvas_page/><name>Roster Dashboard - S - New Tab 3</name><page/><sys_class_name>pa_tabs</sys_class_name><sys_created_by>Padmalatha.Giridhar@isg-one.com</sys_created_by><sys_created_on>2020-12-15 11:27:17</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>e2f19b521bc16810af1ef436464bcb93</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Roster Dashboard - S - New Tab 3</sys_name><sys_overrides/><sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope><sys_update_name>pa_tabs_e2f19b521bc16810af1ef436464bcb93</sys_update_name><sys_updated_by>Padmalatha.Giridhar@isg-one.com</sys_updated_by><sys_updated_on>2020-12-15 11:27:17</sys_updated_on></pa_tabs></record_update>]]></payload>
+        <payload_hash>923294766</payload_hash>
+        <record_name>Roster Dashboard - S - New Tab 3</record_name>
+        <reverted_from/>
+        <source>dd6aaa8e1b306c90af1ef436464bcb70</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Padmalatha.Giridhar@isg-one.com</sys_created_by>
+        <sys_created_on>2020-12-15 11:27:24</sys_created_on>
+        <sys_id>9c02db521bc16810af1ef436464bcb1f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1766627ac0b0000001</sys_recorded_at>
+        <sys_updated_by>Padmalatha.Giridhar@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-12-15 11:27:24</sys_updated_on>
+        <type>Tab</type>
+        <update_guid>7ef19b520fc16810754b08606d464694</update_guid>
+        <update_guid_history>7ef19b520fc16810754b08606d464694:-406919300,7ef19b520fc16810754b08606d464694:-406919300,7ef19b520fc16810754b08606d464694:-406919300</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 15-Dec-2020 04.57.24 PM">5802db521bc16810af1ef436464bcb25</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Padmalatha.Giridhar@isg-one.com</sys_created_by>
+        <sys_created_on>2020-12-15 11:27:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="pa_tabs">pa_tabs</sys_db_object>
+        <sys_id>0c0c7c3d0aca4d0c8f4d0f62871ecd24</sys_id>
+        <sys_metadata>e2f19b521bc16810af1ef436464bcb93</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Roster Dashboard - S - New Tab 3</sys_name>
+        <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
+        <sys_scope_delete display_value="">94aba01e32774c00ad01831d23410000</sys_scope_delete>
+        <sys_update_name>pa_tabs_e2f19b521bc16810af1ef436464bcb93</sys_update_name>
+        <sys_update_version display_value="pa_tabs_e2f19b521bc16810af1ef436464bcb93">9c02db521bc16810af1ef436464bcb1f</sys_update_version>
+        <sys_updated_by>Padmalatha.Giridhar@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-12-15 11:27:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

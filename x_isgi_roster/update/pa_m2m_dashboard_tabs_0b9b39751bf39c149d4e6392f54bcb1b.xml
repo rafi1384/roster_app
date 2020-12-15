@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_m2m_dashboard_tabs">
     <pa_m2m_dashboard_tabs action="INSERT_OR_UPDATE">
-        <dashboard display_value="Roster">2c9bf5751bf39c149d4e6392f54bcb9d</dashboard>
+        <dashboard display_value="Roster Dashboard - SLC View">2c9bf5751bf39c149d4e6392f54bcb9d</dashboard>
         <home>false</home>
         <homepage/>
         <order>1</order>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_isgi_roster.getRosterCount</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>getRosterCount</name>
+        <script><![CDATA[var getRosterCount = Class.create();
+getRosterCount.prototype = Object.extendsObject(AbstractAjaxProcessor,{
+initialize: function(){
+var inc = new GlideAggregate('x_isgi_roster_plan');
+inc.addQuery('slc', 'true');
+inc.addAggregate('COUNT', 'category');
+inc.query();
+var answer = '';
+while (inc.next()) {
+var category = inc.category;
+var categoryCount = inc.getAggregate('COUNT', 'category');
+answer += "\ncategory " + category + ", categoryCount " + categoryCount;
+}
+	return answer;	
+},
+	
+    type: 'getRosterCount'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-12-11 06:14:25</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>eafe91811b852414af1ef436464bcbf2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>getRosterCount</sys_name>
+        <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
+        <sys_update_name>sys_script_include_eafe91811b852414af1ef436464bcbf2</sys_update_name>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-12-11 06:14:25</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</application>
+        <file_path/>
+        <instance_id>69a78f219b99cb447ac36b8af359ff47</instance_id>
+        <instance_name>isggoverndev4</instance_name>
+        <name>sys_script_include_eafe91811b852414af1ef436464bcbf2</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_isgi_roster.getRosterCount&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;getRosterCount&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var getRosterCount = Class.create();
+getRosterCount.prototype = Object.extendsObject(AbstractAjaxProcessor,{
+initialize: function(){
+var inc = new GlideAggregate('x_isgi_roster_plan');
+inc.addQuery('slc', 'true');
+inc.addAggregate('COUNT', 'category');
+inc.query();
+var answer = '';
+while (inc.next()) {
+var category = inc.category;
+var categoryCount = inc.getAggregate('COUNT', 'category');
+answer += "\ncategory " + category + ", categoryCount " + categoryCount;
+}
+	return answer;	
+},
+	
+    type: 'getRosterCount'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;mohamed.rafiulla@isg-one.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-12-11 06:14:25&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;eafe91811b852414af1ef436464bcbf2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;getRosterCount&lt;/sys_name&gt;&lt;sys_package display_value="roster" source="x_isgi_roster"&gt;3f44a5b11b739c149d4e6392f54bcbbf&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="roster"&gt;3f44a5b11b739c149d4e6392f54bcbbf&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_eafe91811b852414af1ef436464bcbf2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;mohamed.rafiulla@isg-one.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-12-11 06:14:25&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1536967464</payload_hash>
+        <record_name>getRosterCount</record_name>
+        <reverted_from/>
+        <source>dd6aaa8e1b306c90af1ef436464bcb70</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-12-11 06:14:25</sys_created_on>
+        <sys_id>2c04a94d1b852414af1ef436464bcb65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>176506fb1510000001</sys_recorded_at>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-12-11 06:14:25</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>2404a94de58524146de520369ce8bf65</update_guid>
+        <update_guid_history>2404a94de58524146de520369ce8bf65:-1536967464</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-12-14 09:58:05</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>4f1d2db328934a84aae8745b769eef21</sys_id>
+        <sys_metadata>eafe91811b852414af1ef436464bcbf2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>getRosterCount</sys_name>
+        <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
+        <sys_scope_delete display_value="">94aba01e32774c00ad01831d23410000</sys_scope_delete>
+        <sys_update_name>sys_script_include_eafe91811b852414af1ef436464bcbf2</sys_update_name>
+        <sys_update_version display_value="sys_script_include_eafe91811b852414af1ef436464bcbf2">2c04a94d1b852414af1ef436464bcb65</sys_update_version>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-12-14 09:58:05</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

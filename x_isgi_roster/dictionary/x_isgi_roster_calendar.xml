@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Calendar" max_length="40" name="x_isgi_roster_calendar" type="collection">
+    <element label="Calendar" max_length="40" name="x_isgi_roster_calendar" sizeclass="0" type="collection">
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" default="true" label="Active" max_length="40" name="active" read_only="true" type="boolean"/>
         <element attributes="edge_encryption_enabled=true" label="Calendar Details" max_length="250" name="calendar_details" read_only="true" type="string"/>
         <element attributes="encode_utf8=false" label="Created by Manager" max_length="32" name="created_by_manager" read_only="true" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Email ID" max_length="100" name="email_id" read_only="true" type="string"/>
@@ -7,7 +8,7 @@
         <element attributes="edge_encryption_enabled=true" label="Emp ID" max_length="40" name="emp_id" read_only="true" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="End Date" max_length="40" name="end_date" read_only="true" type="glide_date"/>
         <element attributes="encode_utf8=false" label="Name" max_length="32" name="name" read_only="true" reference="sys_user" type="reference"/>
-        <element attributes="encode_utf8=false" label="Parent ID" max_length="32" name="parent_id" read_only="true" reference="x_isgi_roster_plan" type="reference"/>
+        <element attributes="encode_utf8=false" label="Parent ID" max_length="32" name="parent_id" read_only="true" reference="x_isgi_roster_plan" reference_cascade_rule="delete" type="reference"/>
         <element attributes="encode_utf8=false" label="SLC" max_length="32" name="slc" read_only="true" reference="sys_user" reference_qual="active=true^roles=x_isgi_roster.slc^EQ" reference_qual_condition="active=true^roles=x_isgi_roster.slc^EQ" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Date" max_length="40" name="start_date" read_only="true" type="glide_date"/>
         <element attributes="edge_encryption_enabled=true" label="Team Name" max_length="100" name="team_name" read_only="true" type="string"/>
@@ -15,6 +16,7 @@
             <choice>
                 <element inactive_on_update="false" label="New" sequence="0" value="1"/>
                 <element inactive_on_update="false" label="Closed" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="2" value="3"/>
             </choice>
         </element>
         <index name="index">

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane">
+    <sys_grid_canvas_pane action="DELETE">
+        <grid_canvas display_value="PA Roster - New Tab">4b9b39751bf39c149d4e6392f54bcb16</grid_canvas>
+        <height>4</height>
+        <portal_widget display_value="Created 03-Nov-2020 09.44.16 AM">5a1c993c1b586410af1ef436464bcb7d</portal_widget>
+        <posx>0</posx>
+        <posy>9</posy>
+        <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-11-03 04:14:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1e1cdd3c1b586410af1ef436464bcb9a</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>4b9b39751bf39c149d4e6392f54bcb16</sys_name>
+        <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
+        <sys_update_name>sys_grid_canvas_pane_1e1cdd3c1b586410af1ef436464bcb9a</sys_update_name>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-12-15 11:33:13</sys_updated_on>
+        <width>2</width>
+    </sys_grid_canvas_pane>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</application>
+        <file_path/>
+        <instance_id>69a78f219b99cb447ac36b8af359ff47</instance_id>
+        <instance_name>isggoverndev4</instance_name>
+        <name>sys_grid_canvas_pane_1e1cdd3c1b586410af1ef436464bcb9a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane"><sys_grid_canvas_pane action="INSERT_OR_UPDATE"><grid_canvas display_value="PA Roster - New Tab">4b9b39751bf39c149d4e6392f54bcb16</grid_canvas><height>4</height><portal_widget display_value="Created 03-Nov-2020 09.44.16 AM">5a1c993c1b586410af1ef436464bcb7d</portal_widget><posx>0</posx><posy>9</posy><sys_class_name>sys_grid_canvas_pane</sys_class_name><sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by><sys_created_on>2020-11-03 04:14:16</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>1e1cdd3c1b586410af1ef436464bcb9a</sys_id><sys_mod_count>21</sys_mod_count><sys_name>4b9b39751bf39c149d4e6392f54bcb16</sys_name><sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope><sys_update_name>sys_grid_canvas_pane_1e1cdd3c1b586410af1ef436464bcb9a</sys_update_name><sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by><sys_updated_on>2020-12-15 11:33:13</sys_updated_on><width>2</width></sys_grid_canvas_pane></record_update>]]></payload>
+        <payload_hash>680534188</payload_hash>
+        <record_name>4b9b39751bf39c149d4e6392f54bcb16</record_name>
+        <reverted_from/>
+        <source>dd6aaa8e1b306c90af1ef436464bcb70</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-12-15 11:33:13</sys_created_on>
+        <sys_id>29539b161bc16810af1ef436464bcb6b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>176662cff0d0000001</sys_recorded_at>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-12-15 11:33:13</sys_updated_on>
+        <type>Grid Canvas Pane</type>
+        <update_guid>2d5393d22fc168103c8daa1dca4ad3da</update_guid>
+        <update_guid_history>2d5393d22fc168103c8daa1dca4ad3da:680534188,f1431716d1c16810942942ac386364ce:1751311310,b9335fd2cec1681044ffdb743d67fa9e:941100305,0d33171637c168100d21ec3e649c8cbc:-1687993296,b0f25f920ac168104690ef6576a5a72b:-617216174,e55ae24283706c905b598cefeb838936:0,c44ae6029b706c90a039560ac2c586f2:-1196294189,ca95e64688306c90c67576e05779a0e3:-1427427179,c2bde534931c6410d38d88b5cb6084a8:0,09adadf0521c641016bd9fb73ea71424:-1196294189,994aedf808d864102ac1cedff5ed4c90:-1427427179,6712213c33986410357d4f3eac942dfa:0,e602a9f842986410d8d7076707d48e09:-1196294189,79b1a1b8fe986410d6c3400db8d6b073:0,d4a16978329864109abd6e91f9adbf95:-1196294189,1c1e9d30a99864102764b71dee9f079c:-1427427179,a70e1930e9986410609abb886769f952:-617216174,2dcc5d7c40586410babe17916faa7052:-1427427179,10ccd97c925864100d27bdf52e2a3fa2:941100305,c3bcd1bc67586410803b3e2a1dd198e7:-617216174,e9bc997ca258641030b0f2698483f579:-1427427179,87ac5d7c855864100f6fdf6d08ef34f6:941100305,a1ac597ca458641017fda62432b4643d:-617216174,c4ac11bc9b586410ffd1e741768c9e3a:-1427427179,a29c5d7c09586410eaa6761ae1851574:941100305,199cd97c95586410620c51124b5eecf3:-617216174,527cd57c415864103e72d091849e5e4e:-1427427179,697cd57c285864107915c31e388cc0bd:-617216174,366c157c37586410b0f5ebb2924536a3:-1427427179,546c957ce55864101dbb24212b514257:-617216174,af1c993cf7586410fb45175c87b108fe:-1427427179,161cdd3cbf586410036c9bca76c56e9c:-1397946965</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-12-15 11:33:23</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_grid_canvas_pane">sys_grid_canvas_pane</sys_db_object>
+        <sys_id>4937b684e9fd410291e00212599bcfb9</sys_id>
+        <sys_metadata>1e1cdd3c1b586410af1ef436464bcb9a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>4b9b39751bf39c149d4e6392f54bcb16</sys_name>
+        <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
+        <sys_scope_delete display_value="">94aba01e32774c00ad01831d23410000</sys_scope_delete>
+        <sys_update_name>sys_grid_canvas_pane_1e1cdd3c1b586410af1ef436464bcb9a</sys_update_name>
+        <sys_update_version display_value="sys_grid_canvas_pane_1e1cdd3c1b586410af1ef436464bcb9a">29539b161bc16810af1ef436464bcb6b</sys_update_version>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-12-15 11:33:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

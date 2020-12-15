@@ -15,8 +15,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>40d5a1fd1b339c149d4e6392f54bcbc1</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Roster</sys_name>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Roster Application</sys_name>
         <sys_overrides/>
         <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
         <sys_policy/>
@@ -24,8 +24,8 @@
         <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
         <sys_update_name>sys_app_application_40d5a1fd1b339c149d4e6392f54bcbc1</sys_update_name>
         <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-        <sys_updated_on>2020-10-20 10:45:40</sys_updated_on>
-        <title>Roster</title>
+        <sys_updated_on>2020-12-14 03:02:16</sys_updated_on>
+        <title>Roster Application</title>
         <view_name/>
     </sys_app_application>
 </record_update>

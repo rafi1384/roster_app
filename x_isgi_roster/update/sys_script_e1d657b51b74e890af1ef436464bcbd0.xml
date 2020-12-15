@@ -15,11 +15,15 @@
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition/>
+        <filter_condition table="x_isgi_roster_plan">active=true^difference!=100^workflow_state=1^EQ<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="false" field="difference" goto="false" newquery="false" operator="!=" or="false" value="100"/>
+            <item display_value="Booking InProgress" endquery="false" field="workflow_state" goto="false" newquery="false" operator="=" or="false" value="1"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>Update Allocation</name>
-        <order>105</order>
+        <name>Update Actual Booking</name>
+        <order>50</order>
         <priority>100</priority>
         <rest_method/>
         <rest_method_text/>
@@ -28,31 +32,61 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-updateBudget();
+getActuals();
+updateBudget();	
 	
-function updateBudget(){
-gr = new GlideRecord("x_isgi_roster_allocation");
-gr.addQuery('month_value',current.month);
-gr.addQuery('slc',current.slc);	
-gr.query();
-while(gr.next()){
-var Budget = gr.total_budget_seats;
-var Actuals = gr.total_actual_seats;		
-}
-current.base_allotted=Budget;
-current.actual_booked=Actuals;	
-}
-
-var difference = (current.base_allotted-current.actual_booked);
-if(difference<=0 || difference==""){
-current.difference=0;	
-gs.addErrorMessage('All the seats are booked, please contact your respective SLC');	
+function getActuals(){
+var grt = new GlideRecord('x_isgi_roster_plan');
+grt.addQuery('slc',current.slc);
+grt.addQuery('month',current.month);
+grt.addQuery('active',true);
+grt.query();	
+var count = grt.getRowCount();
+gs.addInfoMessage(count+'  Count from the Update Actual Booking BusinessRule');	
+while(grt.next()){
+current.actual_booked=grt.getRowCount();
+current.update();
 }	
+}
+function updateBudget(){	
+var gr = new GlideRecord('x_isgi_roster_allocation');
+	gr.addQuery('slc',current.slc);
+	gr.addQuery('month_value',current.month);
+	gr.query();
+	if(gr.next()){
+	current.base_allotted=gr.total_budget_seats;
+	current.update();	
+	}
+}
+	
+var budget = current.base_allotted;
+var actual = current.actual_booked;
+current.seat_fill_per = (current.actual_booked/current.base_allotted)*100;
+var differ = (budget-actual);
+current.difference=differ;
+current.update();
+if(current.difference<0||current.difference==""){
+gs.addErrorMessage("All the seats have been book, an email has been trigger to"+ current.slc.getDisplayValue()+" for further processing");
+current.workflow_state="2";	
+current.active=false;	
+current.update();
+}
 else{
-current.difference=difference;	
+//gs.addInfoMessage("Your seat has been book for the month of " + current.month);
+		UpdateAllocationTable();
+	}
+
+function UpdateAllocationTable(){	
+var gr = new GlideRecord('x_isgi_roster_allocation');
+gr.addQuery('slc',current.slc);
+gr.addQuery('month_value',current.month);
+gr.query();
+if(gr.next()){
+gr.total_actual_seats=current.actual_booked;
+gr.update();
+}	
 }	
 	
-
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
@@ -61,8 +95,8 @@ current.difference=difference;
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e1d657b51b74e890af1ef436464bcbd0</sys_id>
-        <sys_mod_count>7</sys_mod_count>
-        <sys_name>Update Allocation</sys_name>
+        <sys_mod_count>73</sys_mod_count>
+        <sys_name>Update Actual Booking</sys_name>
         <sys_overrides/>
         <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
         <sys_policy/>
@@ -70,9 +104,9 @@ current.difference=difference;
         <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
         <sys_update_name>sys_script_e1d657b51b74e890af1ef436464bcbd0</sys_update_name>
         <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-        <sys_updated_on>2020-12-01 13:16:37</sys_updated_on>
+        <sys_updated_on>2020-12-15 10:08:33</sys_updated_on>
         <template/>
-        <when>before</when>
+        <when>after</when>
     </sys_script>
     <sys_translated_text action="delete_multiple" query="documentkey=e1d657b51b74e890af1ef436464bcbd0"/>
 </record_update>
