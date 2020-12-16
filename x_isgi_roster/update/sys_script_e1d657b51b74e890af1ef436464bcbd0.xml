@@ -42,7 +42,7 @@ grt.addQuery('month',current.month);
 grt.addQuery('active',true);
 grt.query();	
 var count = grt.getRowCount();
-gs.addInfoMessage(count+'  Count from the Update Actual Booking BusinessRule');	
+//gs.addInfoMessage(count+'  Count from the Update Actual Booking BusinessRule');	
 while(grt.next()){
 current.actual_booked=grt.getRowCount();
 current.update();
@@ -95,7 +95,7 @@ gr.update();
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e1d657b51b74e890af1ef436464bcbd0</sys_id>
-        <sys_mod_count>73</sys_mod_count>
+        <sys_mod_count>74</sys_mod_count>
         <sys_name>Update Actual Booking</sys_name>
         <sys_overrides/>
         <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
@@ -104,7 +104,7 @@ gr.update();
         <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
         <sys_update_name>sys_script_e1d657b51b74e890af1ef436464bcbd0</sys_update_name>
         <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-        <sys_updated_on>2020-12-15 10:08:33</sys_updated_on>
+        <sys_updated_on>2020-12-16 05:32:58</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

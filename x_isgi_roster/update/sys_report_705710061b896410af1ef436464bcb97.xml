@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report">
     <sys_report action="INSERT_OR_UPDATE">
         <additional_groupby/>
-        <aggregate>AVG</aggregate>
+        <aggregate>SUM</aggregate>
         <allow_data_label_overlap>false</allow_data_label_overlap>
         <axis_max_color display_value="UI14 Blue Light">b0d449b3d7332100fa6c0c12ce610383</axis_max_color>
         <axis_min_color display_value="White">65b303c7a9fe3dba00629aff95ee3597</axis_min_color>
@@ -26,7 +26,7 @@
         <color display_value="Default Color">de699435d7033100b4964ebfae610331</color>
         <color_palette display_value="Default UI14">aa558ab3d7732100fa6c0c12ce610377</color_palette>
         <colors/>
-        <column>actual_booked</column>
+        <column>actual_fixed_seats</column>
         <compute_percent>aggregate</compute_percent>
         <content/>
         <created_by_user display_value="Mohamed Rafiulla">bfdc2ff4dba613009a635858dc961933</created_by_user>
@@ -42,11 +42,9 @@
         <donut_width_percent>50</donut_width_percent>
         <end_time/>
         <exp_report_attrs>true</exp_report_attrs>
-        <field>actual_booked</field>
+        <field>actual_fixed_seats</field>
         <field_list/>
-        <filter table="x_isgi_roster_plan">workflow_state=5^active=true<item display_value="Booked" endquery="false" field="workflow_state" goto="false" newquery="false" operator="=" or="false" value="5"/>
-            <item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
-        </filter>
+        <filter/>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>
         <gauge_autoscale>true</gauge_autoscale>
@@ -77,7 +75,7 @@
         <report_drilldown/>
         <report_source/>
         <roles>snc_external,snc_internal</roles>
-        <row>actual_booked</row>
+        <row>actual_fixed_seats</row>
         <sc_groupby_item_id/>
         <sc_groupby_variable_id/>
         <sc_stackby_item_id/>
@@ -99,13 +97,13 @@
         <source_type>table</source_type>
         <start_time/>
         <style_config/>
-        <sumfield>base_allotted</sumfield>
+        <sumfield>total_budget_seats</sumfield>
         <sys_class_name>sys_report</sys_class_name>
         <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
         <sys_created_on>2020-12-14 03:13:18</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>705710061b896410af1ef436464bcb97</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Total Allotted Seats</sys_name>
         <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
         <sys_policy/>
@@ -113,8 +111,8 @@
         <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
         <sys_update_name>sys_report_705710061b896410af1ef436464bcb97</sys_update_name>
         <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-        <sys_updated_on>2020-12-15 12:02:23</sys_updated_on>
-        <table>x_isgi_roster_plan</table>
+        <sys_updated_on>2020-12-16 05:37:34</sys_updated_on>
+        <table>x_isgi_roster_allocation</table>
         <title>Total Allotted Seats</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
         <title_vertical_alignment>top</title_vertical_alignment>

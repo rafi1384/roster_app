@@ -46,7 +46,7 @@
                 <element inactive="true" inactive_on_update="true" label="Not Applicable" sequence="3" value="4"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" choice="1" default="1" label="Workflow State" max_length="100" name="workflow_state" type="string">
+        <element attributes="edge_encryption_enabled=true" choice="1" default="1" label="Workflow State" max_length="100" name="workflow_state" read_only="true" type="string">
             <choice>
                 <element inactive_on_update="false" label="Booking InProgress" sequence="0" value="1"/>
                 <element inactive_on_update="false" label="Booking Pending" sequence="1" value="2"/>

@@ -37,13 +37,13 @@
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
-            <sum>false</sum>
+            <sum>true</sum>
             <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
             <sys_created_on>2020-12-02 02:18:16</sys_created_on>
             <sys_id>59a79a461bbc2c90af1ef436464bcb63</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>2</sys_mod_count>
             <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-            <sys_updated_on>2020-12-02 02:18:16</sys_updated_on>
+            <sys_updated_on>2020-12-16 05:37:14</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
