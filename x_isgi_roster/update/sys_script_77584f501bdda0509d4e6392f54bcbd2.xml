@@ -11,15 +11,17 @@
         <advanced>true</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
-        <collection>x_isgi_roster_allocation</collection>
+        <collection>x_isgi_roster_plan</collection>
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition/>
+        <filter_condition table="x_isgi_roster_plan">workflow_stateCHANGESTO5^EQ<item display_value="Booked" endquery="false" field="workflow_state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="5"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>Update Aggregation on this table.</name>
-        <order>100</order>
+        <name>Message when Booked</name>
+        <order>51</order>
         <priority>100</priority>
         <rest_method/>
         <rest_method_text/>
@@ -27,48 +29,30 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[(function executeRule(current, previous /*null when async*/){
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
-//getFixedSeats();	
-
-function getFixedSeats(){
-var gr = new GlideRecord('x_isgi_roster_plan');
-gr.addQuery('slc',current.slc);
-gr.addQuery('month',current.month_value);
-gr.addQuery('active',true);	
-gr.query();
-while(gr.next()){	
-var Actuals = gr.getRowCount();
-current.total_actual_seats=Actuals;	
-}	
-}	
-	
-var totalbudget = current.total_budget_seats;
-var totalactual = current.total_actual_seats;	
-var totalseatfill = (totalactual/totalbudget)*100;
-current.seat_fill_per=totalseatfill;	
-current.difference=(current.total_budget_seats-current.total_actual_seats);	
+gs.addInfoMessage("Your seat has been booked for the month of " + current.month);
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
-        <sys_created_on>2020-11-02 09:33:26</sys_created_on>
+        <sys_created_on>2020-12-21 15:54:08</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>648a19201bd8e010af1ef436464bcb0f</sys_id>
-        <sys_mod_count>41</sys_mod_count>
-        <sys_name>Update Aggregation on this table.</sys_name>
+        <sys_id>77584f501bdda0509d4e6392f54bcbd2</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Message when Booked</sys_name>
         <sys_overrides/>
         <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
-        <sys_update_name>sys_script_648a19201bd8e010af1ef436464bcb0f</sys_update_name>
-        <sys_updated_by>ramesh.r@isg-one.com</sys_updated_by>
-        <sys_updated_on>2020-12-22 13:10:58</sys_updated_on>
+        <sys_update_name>sys_script_77584f501bdda0509d4e6392f54bcbd2</sys_update_name>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-12-22 10:18:43</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=648a19201bd8e010af1ef436464bcb0f"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=77584f501bdda0509d4e6392f54bcbd2"/>
 </record_update>

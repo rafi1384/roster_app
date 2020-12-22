@@ -33,7 +33,7 @@
         <name>x_isgi_roster_allocation</name>
         <next_element/>
         <primary>false</primary>
-        <read_only>true</read_only>
+        <read_only>false</read_only>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -50,15 +50,15 @@
         <sys_created_on>2020-10-27 08:12:43</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>674aae021b706c90af1ef436464bcbab</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Total Booked Seats</sys_name>
         <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
         <sys_update_name>sys_dictionary_x_isgi_roster_allocation_total_actual_seats</sys_update_name>
-        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-        <sys_updated_on>2020-12-15 10:14:12</sys_updated_on>
+        <sys_updated_by>ramesh.r@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-12-22 05:46:39</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

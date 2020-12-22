@@ -30,40 +30,94 @@
         <order>100</order>
         <script><![CDATA[current.workflow_state="5";
 current.active=true;
-current.update();
+
+var budget = current.base_allotted+1; // RR
+var actual = current.actual_booked; // RR
+current.seat_fill_per = (current.actual_booked/current.base_allotted)*100; // RR
+var differ = (budget-actual); // RR
+current.difference=differ; // RR
+
 ReduceAllocation();
+extrapolate();
+AddAllocation();
 action.setRedirectURL(current);
 
 function ReduceAllocation(){
-gr = new GlideRecord('x_isgi_roster_allocation');
-gr.addQuery('slc',current.to_slc);
-gr.addQuery('month_value',current.month);
-gr.query();
-gr.getRowCount();
-if(gr.getRowCount()==0){
-gs.addErrorMessage('No allocation record found');	
-}	
-else{
-if(gr.next()){
-if(gr.total_budget_seats>0){
-gr.total_budget_seats=gr.total_budget_seats-1;
-gr.update();	
-   }
-  }
- }
+	gr = new GlideRecord('x_isgi_roster_allocation');
+	gr.addQuery('slc',current.to_slc);
+	gr.addQuery('month_value',current.month);
+	gr.query();
+	gr.getRowCount();
+	if(gr.getRowCount()==0){
+		gs.addErrorMessage('No allocation record found');	
+	}	
+	else{
+		if(gr.next()){
+			if(gr.total_budget_seats>0){
+				gr.total_budget_seats=gr.total_budget_seats-1;
+				
+				var totalseatfill = (gr.total_actual_seats/gr.total_budget_seats)*100; // RR
+				gr.seat_fill_per=totalseatfill;	 // RR
+				gr.difference=(gr.total_budget_seats-gr.total_actual_seats);	 // RR
+
+				gr.update();	
+			}
+		}
+	}
 }
-AddAllocation();
+
 function AddAllocation(){
-slc = new GlideRecord('x_isgi_roster_allocation');
-slc.addQuery('slc',current.slc);
-slc.addQuery('month_value',current.month);
-slc.query();
-if(slc.next()){
-slc.total_budget_seats=slc.total_budget_seats+1;
-slc.update();	
- }	
+	slc = new GlideRecord('x_isgi_roster_allocation');
+	slc.addQuery('slc',current.slc);
+	slc.addQuery('month_value',current.month);
+	slc.query();
+	if(slc.next()){
+		slc.total_budget_seats=slc.total_budget_seats+1;
+
+		var totalseatfill = (slc.total_actual_seats/slc.total_budget_seats)*100; // RR
+		slc.seat_fill_per=totalseatfill;	 // RR
+		slc.difference=(slc.total_budget_seats-slc.total_actual_seats);	 // RR
+
+		slc.update();	
+	}	
 }
-]]></script>
+
+
+
+function extrapolate(){
+
+	var contract_tenure = 1;
+	var reoccur = current.days;
+	var count = (reoccur-1);
+	var x = 0;
+	var n = 0;
+	for (x; x <= count; x+=1) {//iterating loop_max number of times.
+		Daily();
+	}
+
+	function Daily(){
+		var sdt = current.roster_start_date;
+		var gdt = new GlideDate();
+		gdt.setValue(sdt);
+		gdt.addDaysLocalTime(x);
+		var now = gdt;
+		var gr = new GlideRecord('x_isgi_roster_calendar');
+		gr.initialize();
+		gr.workflow_state="2";
+		gr.parent_id=current.sys_id;
+		gr.start_date = gdt;
+		gr.end_date=current.end_date;
+		gr.name=current.name.getDisplayValue();
+		gr.emp_id=current.emp_id.getDisplayValue();
+		gr.team_name=current.team_name.getDisplayValue();
+		gr.email_id=current.email_id.getDisplayValue();
+		gr.department=current.department.getDisplayValue();
+		gr.employee_manager=current.manager.getDisplayValue();
+		gr.insert();
+	}
+}
+
+current.update();]]></script>
         <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -75,7 +129,7 @@ slc.update();
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8eac265f1bc52c109d4e6392f54bcb5a</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_name>Approve</sys_name>
         <sys_overrides/>
         <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
@@ -83,8 +137,8 @@ slc.update();
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
         <sys_update_name>sys_ui_action_8eac265f1bc52c109d4e6392f54bcb5a</sys_update_name>
-        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-        <sys_updated_on>2020-12-18 12:38:55</sys_updated_on>
+        <sys_updated_by>ramesh.r@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-12-22 11:54:53</sys_updated_on>
         <table>x_isgi_roster_plan</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

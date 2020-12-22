@@ -168,6 +168,20 @@
             <sys_user/>
             <type/>
         </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>roster_plan</element>
+            <position>12</position>
+            <sys_created_by>ramesh.r@isg-one.com</sys_created_by>
+            <sys_created_on>2020-12-22 06:42:15</sys_created_on>
+            <sys_id>ebd3d6ec1b9124509d4e6392f54bcb4a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_isgi_roster_allocation" sys_domain="global" view="Default view">7fa604301b44ec549d4e6392f54bcbdc</sys_ui_section>
+            <sys_updated_by>ramesh.r@isg-one.com</sys_updated_by>
+            <sys_updated_on>2020-12-22 06:42:15</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
             <header>false</header>

@@ -2,23 +2,23 @@
     <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
         <grid_canvas display_value="PA Roster Dashboard - E - New Tab">85d510821b896410af1ef436464bcb18</grid_canvas>
         <height>4</height>
-        <portal_widget display_value="Created 14-Dec-2020 08.39.51 AM">568658821b896410af1ef436464bcb34</portal_widget>
-        <posx>0</posx>
+        <portal_widget display_value="Created 21-Dec-2020 09.56.37 PM">fd001bdc1bdda0509d4e6392f54bcb0d</portal_widget>
+        <posx>6</posx>
         <posy>0</posy>
         <sys_class_name>sys_grid_canvas_pane</sys_class_name>
         <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
-        <sys_created_on>2020-12-14 03:09:51</sys_created_on>
+        <sys_created_on>2020-12-21 16:26:37</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>128658821b896410af1ef436464bcb36</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_id>b1001bdc1bdda0509d4e6392f54bcb10</sys_id>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>85d510821b896410af1ef436464bcb18</sys_name>
         <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
-        <sys_update_name>sys_grid_canvas_pane_128658821b896410af1ef436464bcb36</sys_update_name>
+        <sys_update_name>sys_grid_canvas_pane_b1001bdc1bdda0509d4e6392f54bcb10</sys_update_name>
         <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-        <sys_updated_on>2020-12-14 03:22:39</sys_updated_on>
+        <sys_updated_on>2020-12-21 16:26:44</sys_updated_on>
         <width>3</width>
     </sys_grid_canvas_pane>
 </record_update>

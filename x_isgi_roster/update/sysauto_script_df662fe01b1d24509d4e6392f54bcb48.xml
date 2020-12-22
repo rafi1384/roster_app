@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>calc_budget_booking</name>
+        <run_as display_value="Ramesh R">7f533b37dbb9930022083b4ffe9619b4</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2020-12-22 12:42:57</run_start>
+        <run_time>1969-12-31 18:30:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[var current = new GlideRecord("x_isgi_roster_allocation"); 
+current.addQuery('sys_id',gs.getProperty('x_isgi_roster.update_budget_seats'));
+current.query();
+if (current.next()) {
+	
+var gr = new GlideRecord('x_isgi_roster_plan');
+gr.addQuery('slc',current.slc);
+gr.addQuery('month',current.month_value);
+gr.addQuery('active',true);	
+gr.query();
+while(gr.next()){
+var Budget=current.total_budget_seats;
+gr.base_allotted=Budget;	
+gr.update();
+}	
+}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>ramesh.r@isg-one.com</sys_created_by>
+        <sys_created_on>2020-12-22 12:43:17</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>df662fe01b1d24509d4e6392f54bcb48</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>calc_budget_booking</sys_name>
+        <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
+        <sys_update_name>sysauto_script_df662fe01b1d24509d4e6392f54bcb48</sys_update_name>
+        <sys_updated_by>ramesh.r@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-12-22 12:48:10</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>
