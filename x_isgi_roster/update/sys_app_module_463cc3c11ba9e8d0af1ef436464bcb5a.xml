@@ -18,7 +18,7 @@
         <override_menu_roles>false</override_menu_roles>
         <query>$pa_dashboard.do?sysparm_dashboard=85e9cb8d1b69e8d0af1ef436464bcb3c&amp;sysparm_tab=d1e94f8d1b69e8d0af1ef436464bcb7c&amp;sysparm_cancelable=true&amp;sysparm_editable=undefined&amp;sysparm_active_panel=false</query>
         <report/>
-        <roles>x_isgi_roster.manager</roles>
+        <roles>admin</roles>
         <survey/>
         <survey_overwrite>true</survey_overwrite>
         <sys_class_name>sys_app_module</sys_class_name>
@@ -28,7 +28,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>463cc3c11ba9e8d0af1ef436464bcb5a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Manager View</sys_name>
         <sys_overrides/>
         <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
@@ -37,7 +37,7 @@
         <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
         <sys_update_name>sys_app_module_463cc3c11ba9e8d0af1ef436464bcb5a</sys_update_name>
         <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-        <sys_updated_on>2021-01-05 10:22:36</sys_updated_on>
+        <sys_updated_on>2021-01-05 10:39:03</sys_updated_on>
         <timeline_page/>
         <title>Manager View</title>
         <uncancelable>false</uncancelable>
