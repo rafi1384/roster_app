@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Calendar" max_length="40" name="x_isgi_roster_calendar" sizeclass="124" type="collection">
+    <element label="Calendar" max_length="40" name="x_isgi_roster_calendar" sizeclass="186" type="collection">
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" default="true" label="Active" max_length="40" name="active" read_only="true" type="boolean"/>
         <element attributes="edge_encryption_enabled=true" label="Calendar Details" max_length="250" name="calendar_details" read_only="true" type="string"/>
         <element attributes="encode_utf8=false" label="Created by Manager" max_length="32" name="created_by_manager" read_only="true" reference="sys_user" type="reference"/>

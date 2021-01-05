@@ -6,40 +6,40 @@
         <content_page/>
         <device_type/>
         <filter/>
-        <hint>Dashboard</hint>
+        <hint/>
         <homepage/>
         <image/>
         <link_type>DIRECT</link_type>
         <map_page/>
-        <mobile_title>Dashboard</mobile_title>
+        <mobile_title>Manager View</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name/>
-        <order>10</order>
+        <order>12</order>
         <override_menu_roles>false</override_menu_roles>
-        <query>$pa_dashboard.do?sysparm_dashboard=2c9bf5751bf39c149d4e6392f54bcb9d&amp;sysparm_tab=4f9b39751bf39c149d4e6392f54bcb18&amp;sysparm_cancelable=true&amp;sysparm_editable=undefined&amp;sysparm_active_panel=false</query>
+        <query>$pa_dashboard.do?sysparm_dashboard=85e9cb8d1b69e8d0af1ef436464bcb3c&amp;sysparm_tab=d1e94f8d1b69e8d0af1ef436464bcb7c&amp;sysparm_cancelable=true&amp;sysparm_editable=undefined&amp;sysparm_active_panel=false</query>
         <report/>
-        <roles>x_isgi_roster.admin,x_isgi_roster.slc</roles>
+        <roles>x_isgi_roster.manager</roles>
         <survey/>
         <survey_overwrite>true</survey_overwrite>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
-        <sys_created_on>2020-11-02 13:09:18</sys_created_on>
+        <sys_created_on>2021-01-05 10:22:36</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>68cc86ac1b102410af1ef436464bcb41</sys_id>
-        <sys_mod_count>9</sys_mod_count>
-        <sys_name>SLC View</sys_name>
+        <sys_id>463cc3c11ba9e8d0af1ef436464bcb5a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Manager View</sys_name>
         <sys_overrides/>
         <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
-        <sys_update_name>sys_app_module_68cc86ac1b102410af1ef436464bcb41</sys_update_name>
+        <sys_update_name>sys_app_module_463cc3c11ba9e8d0af1ef436464bcb5a</sys_update_name>
         <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-        <sys_updated_on>2021-01-05 10:19:49</sys_updated_on>
+        <sys_updated_on>2021-01-05 10:22:36</sys_updated_on>
         <timeline_page/>
-        <title>SLC View</title>
+        <title>Manager View</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>
