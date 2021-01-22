@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups">
+    <sys_report_users_groups action="DELETE">
+        <group_id/>
+        <report_id display_value="Total Booked Seats">03571c061b896410af1ef436464bcb2c</report_id>
+        <sys_class_name>sys_report_users_groups</sys_class_name>
+        <sys_created_by>SaiThulasi.Kaditham@isg-one.com</sys_created_by>
+        <sys_created_on>2021-01-22 07:06:15</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>dda2cea61bb96090af1ef436464bcb7d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>03571c061b896410af1ef436464bcb2c</sys_name>
+        <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
+        <sys_update_name>sys_report_users_groups_dda2cea61bb96090af1ef436464bcb7d</sys_update_name>
+        <sys_updated_by>SaiThulasi.Kaditham@isg-one.com</sys_updated_by>
+        <sys_updated_on>2021-01-22 07:06:15</sys_updated_on>
+        <user_id display_value="SaiThulasi Kaditham">8cc45800db120c505b01b6bffe9619d6</user_id>
+    </sys_report_users_groups>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</application>
+        <file_path/>
+        <instance_id>69a78f219b99cb447ac36b8af359ff47</instance_id>
+        <instance_name>isggoverndev4</instance_name>
+        <name>sys_report_users_groups_dda2cea61bb96090af1ef436464bcb7d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups"><sys_report_users_groups action="INSERT_OR_UPDATE"><group_id/><report_id display_value="Total Booked Seats">03571c061b896410af1ef436464bcb2c</report_id><sys_class_name>sys_report_users_groups</sys_class_name><sys_created_by>SaiThulasi.Kaditham@isg-one.com</sys_created_by><sys_created_on>2021-01-22 07:06:15</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>dda2cea61bb96090af1ef436464bcb7d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>03571c061b896410af1ef436464bcb2c</sys_name><sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope><sys_update_name>sys_report_users_groups_dda2cea61bb96090af1ef436464bcb7d</sys_update_name><sys_updated_by>SaiThulasi.Kaditham@isg-one.com</sys_updated_by><sys_updated_on>2021-01-22 07:06:15</sys_updated_on><user_id display_value="SaiThulasi Kaditham">8cc45800db120c505b01b6bffe9619d6</user_id></sys_report_users_groups></record_update>]]></payload>
+        <payload_hash>-1744460310</payload_hash>
+        <record_name>03571c061b896410af1ef436464bcb2c</record_name>
+        <reverted_from/>
+        <source>dd6aaa8e1b306c90af1ef436464bcb70</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>SaiThulasi.Kaditham@isg-one.com</sys_created_by>
+        <sys_created_on>2021-01-22 07:06:15</sys_created_on>
+        <sys_id>91a2cea61bb96090af1ef436464bcb80</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17728ea3b1b0000001</sys_recorded_at>
+        <sys_updated_by>SaiThulasi.Kaditham@isg-one.com</sys_updated_by>
+        <sys_updated_on>2021-01-22 07:06:15</sys_updated_on>
+        <type>Report Users and Groups</type>
+        <update_guid>99a2cea6d7b9609091191ce8b6846a7f</update_guid>
+        <update_guid_history>99a2cea6d7b9609091191ce8b6846a7f:-1744460310</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>SaiThulasi.Kaditham@isg-one.com</sys_created_by>
+        <sys_created_on>2021-01-22 07:06:40</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_report_users_groups">sys_report_users_groups</sys_db_object>
+        <sys_id>07d0887ce0c943a08188f923a6275440</sys_id>
+        <sys_metadata>dda2cea61bb96090af1ef436464bcb7d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>03571c061b896410af1ef436464bcb2c</sys_name>
+        <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
+        <sys_parent display_value="Total Booked Seats">03571c061b896410af1ef436464bcb2c</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
+        <sys_scope_delete display_value="">94aba01e32774c00ad01831d23410000</sys_scope_delete>
+        <sys_update_name>sys_report_users_groups_dda2cea61bb96090af1ef436464bcb7d</sys_update_name>
+        <sys_update_version display_value="sys_report_users_groups_dda2cea61bb96090af1ef436464bcb7d">91a2cea61bb96090af1ef436464bcb80</sys_update_version>
+        <sys_updated_by>SaiThulasi.Kaditham@isg-one.com</sys_updated_by>
+        <sys_updated_on>2021-01-22 07:06:40</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

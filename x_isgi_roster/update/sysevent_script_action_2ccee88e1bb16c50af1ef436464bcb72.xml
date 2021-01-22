@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_script_action">
+    <sysevent_script_action action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition_script/>
+        <description/>
+        <event_name>x_isgi_roster.update.allocation.record</event_name>
+        <name>Update Allocation  Plan Record</name>
+        <order>100</order>
+        <script><![CDATA[if (current.to_slc != "" && current.workflow_state=="5") {
+    var allocationUpdateIfRequest = new GlideRecord("x_isgi_roster_allocation");
+    allocationUpdateIfRequest.addEncodedQuery("month_value=" + current.month + "^monthSTARTSWITH" + current.roster_start_date + "^slc=" + current.slc);
+    allocationUpdateIfRequest.query();
+    if (allocationUpdateIfRequest.next()) {
+        allocationUpdateIfRequest.total_budget_seats = allocationUpdateIfRequest.total_budget_seats - 1;
+        allocationUpdateIfRequest.update();
+
+    }
+
+    var allocationUpdateIfRequestToSlc = new GlideRecord("x_isgi_roster_allocation");
+    allocationUpdateIfRequestToSlc.addEncodedQuery("month_value=" + current.month + "^monthSTARTSWITH" + current.roster_start_date + "^slc=" + current.to_slc);
+    allocationUpdateIfRequestToSlc.query();
+    if (allocationUpdateIfRequestToSlc.next()) {
+        allocationUpdateIfRequestToSlc.total_budget_seats = allocationUpdateIfRequestToSlc.total_budget_seats + 1;
+        allocationUpdateIfRequestToSlc.update();
+
+    }
+}
+
+
+var allocationUpdate = new GlideRecord("x_isgi_roster_allocation");
+allocationUpdate.addEncodedQuery("month_value=" + current.month + "^monthSTARTSWITH" + current.roster_start_date + "^slc=" + current.slc);
+allocationUpdate.query();
+if (allocationUpdate.next()) {
+    if (allocationUpdate.total_actual_seats != "0") {
+        allocationUpdate.total_actual_seats = allocationUpdate.total_actual_seats - 1;
+        allocationUpdate.update();
+    }
+}]]></script>
+        <synchronous>false</synchronous>
+        <sys_class_name>sysevent_script_action</sys_class_name>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2021-01-20 11:43:31</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2ccee88e1bb16c50af1ef436464bcb72</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Update Allocation  Plan Record</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
+        <sys_update_name>sysevent_script_action_2ccee88e1bb16c50af1ef436464bcb72</sys_update_name>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2021-01-22 08:23:31</sys_updated_on>
+    </sysevent_script_action>
+</record_update>

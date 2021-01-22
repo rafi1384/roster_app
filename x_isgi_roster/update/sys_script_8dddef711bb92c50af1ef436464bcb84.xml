@@ -11,16 +11,17 @@
         <advanced>true</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
-        <collection>x_isgi_roster_plan</collection>
+        <collection>x_isgi_roster_allocation</collection>
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="x_isgi_roster_plan">workflow_stateCHANGESTO4^EQ<item display_value="Booking Cancelled" endquery="false" field="workflow_state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="4"/>
+        <filter_condition table="x_isgi_roster_allocation">total_actual_seatsVALCHANGES^ORtotal_budget_seatsVALCHANGES^EQ<item endquery="false" field="total_actual_seats" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="false" field="total_budget_seats" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>Update when cancelled</name>
+        <name>Update Roster Plan</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -31,42 +32,40 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
 
-    gs.eventQueue('x_isgi_roster.update.allocation.record', current);
+	
+    var plan = new GlideRecord("x_isgi_roster_plan");
+    plan.addEncodedQuery("month=" + current.month_value + "^slc=" + current.slc + "^roster_start_dateSTARTSWITH" + current.month + "^workflow_stateIN2,5,4");
+    plan.query();
+    while (plan.next()) {
+        plan.base_allotted = current.total_budget_seats;
+        plan.actual_booked = current.total_actual_seats;
+        plan.difference = current.difference;
+        plan.seat_fill_per = current.seat_fill_per;
+        plan.update();
+    }
 
-    // UpdateAllocation();
 
-    // function UpdateAllocation(){
-    // var gr1 = new GlideRecord('x_isgi_roster_allocation');
-    // gr1.addQuery('slc',current.slc);
-    // gr1.addQuery('month_value',current.month);
-    // gr1.query();
-    // if(gr1.next()){
-    // var gdt = new GlideDateTime();
-    // gr1.counter	= gdt;
-    // gr1.update();
-    // 	}	
-    // }
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
-        <sys_created_on>2020-12-14 11:30:06</sys_created_on>
+        <sys_created_on>2021-01-20 07:27:52</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>2648c2c21b49a410af1ef436464bcb88</sys_id>
-        <sys_mod_count>17</sys_mod_count>
-        <sys_name>Update when cancelled</sys_name>
+        <sys_id>8dddef711bb92c50af1ef436464bcb84</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Update Roster Plan</sys_name>
         <sys_overrides/>
         <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
-        <sys_update_name>sys_script_2648c2c21b49a410af1ef436464bcb88</sys_update_name>
-        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-        <sys_updated_on>2021-01-22 07:56:37</sys_updated_on>
+        <sys_update_name>sys_script_8dddef711bb92c50af1ef436464bcb84</sys_update_name>
+        <sys_updated_by>Nitesh.Garg@isg-one.com</sys_updated_by>
+        <sys_updated_on>2021-01-20 11:56:48</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=2648c2c21b49a410af1ef436464bcb88"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=8dddef711bb92c50af1ef436464bcb84"/>
 </record_update>

@@ -30,20 +30,19 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-var gdt = new GlideDateTime(current.roster_start_date);
-var CreatedDate = new GlideDateTime(gdt);
-var UpdatedDate = new GlideDateTime(current.end_date);  
-var diff = GlideDateTime.subtract(CreatedDate.getDate(), UpdatedDate.getDate());
-var diff1 = new GlideDuration();
-diff1.setValue(diff.getValue());		
-current.duration = diff;
-var value = current.duration.dateNumericValue();
-	var value1 = value/1000;
-	var days = (value1/86400)+1;
-	current.days=days;
-	
-	
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+    var gdt = new GlideDateTime(current.roster_start_date);
+    var CreatedDate = new GlideDateTime(gdt);
+    var UpdatedDate = new GlideDateTime(current.end_date);
+    var diff = GlideDateTime.subtract(CreatedDate.getDate(), UpdatedDate.getDate());
+    var diff1 = new GlideDuration();
+    diff1.setValue(diff.getValue());
+    current.duration = diff;
+    var value = current.duration.dateNumericValue();
+    var value1 = value / 1000;
+    var days = (value1 / 86400) + 1;
+    current.days = days;
+    
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
@@ -52,7 +51,7 @@ var value = current.duration.dateNumericValue();
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>bd02dac41b88e8549d4e6392f54bcbd1</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name>Duration</sys_name>
         <sys_overrides/>
         <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
@@ -61,7 +60,7 @@ var value = current.duration.dateNumericValue();
         <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
         <sys_update_name>sys_script_bd02dac41b88e8549d4e6392f54bcbd1</sys_update_name>
         <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-        <sys_updated_on>2020-12-10 13:47:37</sys_updated_on>
+        <sys_updated_on>2021-01-19 12:39:59</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

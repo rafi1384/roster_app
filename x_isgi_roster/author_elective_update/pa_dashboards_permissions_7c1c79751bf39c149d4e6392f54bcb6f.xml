@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="pa_dashboards_permissions">
+    <pa_dashboards_permissions action="DELETE">
+        <dashboard display_value="Roster Dashboard - SLC View">2c9bf5751bf39c149d4e6392f54bcb9d</dashboard>
+        <delete>false</delete>
+        <group/>
+        <identity>x_isgi_roster.employee</identity>
+        <read>true</read>
+        <role display_value="x_isgi_roster.employee" name="x_isgi_roster.employee">797429fd1b339c149d4e6392f54bcb02</role>
+        <sys_class_name>pa_dashboards_permissions</sys_class_name>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2020-10-12 12:36:32</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7c1c79751bf39c149d4e6392f54bcb6f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_isgi_roster.employee</sys_name>
+        <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
+        <sys_update_name>pa_dashboards_permissions_7c1c79751bf39c149d4e6392f54bcb6f</sys_update_name>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2020-10-12 12:36:32</sys_updated_on>
+        <type>1</type>
+        <user/>
+        <write>false</write>
+    </pa_dashboards_permissions>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</application>
+        <file_path/>
+        <instance_id>69a78f219b99cb447ac36b8af359ff47</instance_id>
+        <instance_name>isggoverndev4</instance_name>
+        <name>pa_dashboards_permissions_7c1c79751bf39c149d4e6392f54bcb6f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="pa_dashboards_permissions"><pa_dashboards_permissions action="INSERT_OR_UPDATE"><dashboard display_value="Roster Dashboard - SLC View">2c9bf5751bf39c149d4e6392f54bcb9d</dashboard><delete>false</delete><group/><identity>x_isgi_roster.employee</identity><read>true</read><role display_value="x_isgi_roster.employee" name="x_isgi_roster.employee">797429fd1b339c149d4e6392f54bcb02</role><sys_class_name>pa_dashboards_permissions</sys_class_name><sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by><sys_created_on>2020-10-12 12:36:32</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>7c1c79751bf39c149d4e6392f54bcb6f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_isgi_roster.employee</sys_name><sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope><sys_update_name>pa_dashboards_permissions_7c1c79751bf39c149d4e6392f54bcb6f</sys_update_name><sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by><sys_updated_on>2020-10-12 12:36:32</sys_updated_on><type>1</type><user/><write>false</write></pa_dashboards_permissions></record_update>]]></payload>
+        <payload_hash>-1646357800</payload_hash>
+        <record_name>x_isgi_roster.employee</record_name>
+        <reverted_from/>
+        <source>dd6aaa8e1b306c90af1ef436464bcb70</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2021-01-22 10:13:47</sys_created_on>
+        <sys_id>dc9d6aa21b31a090af1ef436464bcb49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1772995ecd90000001</sys_recorded_at>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2021-01-22 10:13:47</sys_updated_on>
+        <type>Dashboard Permissions</type>
+        <update_guid>d49d6aa22131a0902632f6ea0799c149</update_guid>
+        <update_guid_history>d49d6aa22131a0902632f6ea0799c149:-1646357800,6d5aa242f5706c907806f6e2bbb363e0:0,144a2a02e0706c9035d3e15dce8d6735:840495200,8a95e686d4306c90c68cb351fa9b3f50:1160508908,79bde5348e1c6410e628fa1da18be061:0,09adadf0a91c6410883dd24270a93097:840495200,e14aedf803d8641092671af40e2dd0b7:1160508908,6f12213cf59864105c523b6f5e7abbc4:0,3e02a9f830986410b2c96e98398a5918:840495200,61b1a1b84b98641092e14da65ca43617:0,50a16978f1986410d133d82d4b3128a5:840495200,3c1c7975b1f39c141c32e4f3e8a7aa70:1160508908</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 22-Jan-2021 03.54.28 PM">4100362a1b31a090af1ef436464bcb75</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
+        <sys_created_on>2021-01-22 10:24:28</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="pa_dashboards_permissions">pa_dashboards_permissions</sys_db_object>
+        <sys_id>02b9bf4b2b364eee80868bc95c505339</sys_id>
+        <sys_metadata>7c1c79751bf39c149d4e6392f54bcb6f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_isgi_roster.employee</sys_name>
+        <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
+        <sys_scope_delete display_value="">94aba01e32774c00ad01831d23410000</sys_scope_delete>
+        <sys_update_name>pa_dashboards_permissions_7c1c79751bf39c149d4e6392f54bcb6f</sys_update_name>
+        <sys_update_version display_value="pa_dashboards_permissions_7c1c79751bf39c149d4e6392f54bcb6f">dc9d6aa21b31a090af1ef436464bcb49</sys_update_version>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2021-01-22 10:24:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

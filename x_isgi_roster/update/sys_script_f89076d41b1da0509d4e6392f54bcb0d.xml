@@ -6,7 +6,7 @@
         <action_insert>true</action_insert>
         <action_query>false</action_query>
         <action_update>true</action_update>
-        <active>true</active>
+        <active>false</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
@@ -34,49 +34,37 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
-
-
-	var gr1 = new GlideRecord('x_isgi_roster_allocation');
-	gr1.addQuery('slc',current.slc);
-	gr1.addQuery('month_value',current.month);
-	gr1.query();
-	if(gr1.next()){
-
-		var rosterplans=gr1.roster_plan.toString().split(',');
-		if (rosterplans.indexOf(current.sys_id.toString())<0){
-			rosterplans.push(current.sys_id.toString());
-			gr1.roster_plan=rosterplans.toString();
-
-			var totalbudget = gr1.total_budget_seats;
-			var totalactual = gr1.total_actual_seats+1;	
-			var difference=totalbudget-totalactual;	
-			
-			if(difference<0){
-				gs.addErrorMessage("All the seats have been booked, an email has been trigger to "+ current.slc.getDisplayValue()+" for further processing");
-
-			}
-			gr1.update();
-
-		}
-	}
-
-
-
-
-	var gr = new GlideRecord('sys_properties');
-	gr.addQuery('name','x_isgi_roster.calc_actual_booking');
-	gr.query();
-	if (gr.next()) {
-		gr.value = current.sys_id.toString();
-		gr.update();
-
-		var jobId = 'd400b6941b1da0509d4e6392f54bcbd6'; // 'calc_actual_booking'
-		var grsch = new GlideRecord('sysauto_script');
-		if (!grsch.get(jobId)) {
-			throw new Error('Unable to find sch job');
-		}
-		gs.executeNow(grsch);
-	}
+var gr1 = new GlideRecord('x_isgi_roster_allocation');
+gr1.addQuery('slc',current.slc);
+gr1.addQuery('month_value',current.month);
+gr1.query();
+if(gr1.next()){
+var rosterplans=gr1.roster_plan.toString().split(',');
+if (rosterplans.indexOf(current.sys_id.toString())<0){
+rosterplans.push(current.sys_id.toString());
+gr1.roster_plan=rosterplans.toString();
+var totalbudget = gr1.total_budget_seats;
+var totalactual = gr1.total_actual_seats+1;	
+var difference=totalbudget-totalactual;	
+if(difference<0){
+gs.addErrorMessage("All the seats have been booked, an email has been trigger to "+ current.slc.getDisplayValue()+" for further processing");
+}
+gr1.update();
+}
+}
+var gr = new GlideRecord('sys_properties');
+gr.addQuery('name','x_isgi_roster.calc_actual_booking');
+gr.query();
+if (gr.next()) {
+gr.value = current.sys_id.toString();
+gr.update();
+var jobId = 'd400b6941b1da0509d4e6392f54bcbd6'; // 'calc_actual_booking'
+var grsch = new GlideRecord('sysauto_script');
+if (!grsch.get(jobId)) {
+throw new Error('Unable to find sch job');
+}
+gs.executeNow(grsch);
+}
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
@@ -85,7 +73,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f89076d41b1da0509d4e6392f54bcb0d</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>get_calc_actual_booking</sys_name>
         <sys_overrides/>
         <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
@@ -94,7 +82,7 @@
         <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
         <sys_update_name>sys_script_f89076d41b1da0509d4e6392f54bcb0d</sys_update_name>
         <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-        <sys_updated_on>2020-12-22 09:39:59</sys_updated_on>
+        <sys_updated_on>2021-01-19 09:29:56</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
