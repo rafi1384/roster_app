@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report">
     <sys_report action="INSERT_OR_UPDATE">
         <additional_groupby/>
-        <aggregate>AVG</aggregate>
+        <aggregate>COUNT(DISTINCT</aggregate>
         <allow_data_label_overlap>false</allow_data_label_overlap>
         <axis_max_color display_value="UI14 Blue Light">b0d449b3d7332100fa6c0c12ce610383</axis_max_color>
         <axis_min_color display_value="White">65b303c7a9fe3dba00629aff95ee3597</axis_min_color>
@@ -44,7 +44,8 @@
         <exp_report_attrs>true</exp_report_attrs>
         <field>active</field>
         <field_list/>
-        <filter/>
+        <filter table="x_isgi_roster_plan">workflow_state=5<item display_value="Booked" endquery="false" field="workflow_state" goto="false" newquery="false" operator="=" or="false" value="5"/>
+        </filter>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>
         <gauge_autoscale>true</gauge_autoscale>
@@ -97,21 +98,21 @@
         <source_type>table</source_type>
         <start_time/>
         <style_config/>
-        <sumfield>base_allotted</sumfield>
+        <sumfield>name</sumfield>
         <sys_class_name>sys_report</sys_class_name>
         <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
         <sys_created_on>2020-12-14 03:13:27</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>03571c061b896410af1ef436464bcb2c</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>Total Booked Seats</sys_name>
         <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
         <sys_update_name>sys_report_03571c061b896410af1ef436464bcb2c</sys_update_name>
-        <sys_updated_by>SaiThulasi.Kaditham@isg-one.com</sys_updated_by>
-        <sys_updated_on>2021-01-22 07:06:40</sys_updated_on>
+        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
+        <sys_updated_on>2021-01-25 09:59:35</sys_updated_on>
         <table>x_isgi_roster_plan</table>
         <title>Total Booked Seats</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>

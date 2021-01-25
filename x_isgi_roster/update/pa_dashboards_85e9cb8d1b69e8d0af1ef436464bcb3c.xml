@@ -12,7 +12,7 @@
         <name>Roster Dashboard - Manager View</name>
         <no_tabs>false</no_tabs>
         <order>1000</order>
-        <owner display_value="Mohamed Rafiulla">bfdc2ff4dba613009a635858dc961933</owner>
+        <owner display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</owner>
         <restrict_to_roles/>
         <role_override>true</role_override>
         <roles/>
@@ -24,7 +24,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>85e9cb8d1b69e8d0af1ef436464bcb3c</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Roster Dashboard - Manager View</sys_name>
         <sys_overrides/>
         <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
@@ -33,7 +33,7 @@
         <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
         <sys_update_name>pa_dashboards_85e9cb8d1b69e8d0af1ef436464bcb3c</sys_update_name>
         <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-        <sys_updated_on>2021-01-05 10:14:51</sys_updated_on>
+        <sys_updated_on>2021-01-25 10:23:37</sys_updated_on>
         <users/>
         <visible_to>2</visible_to>
     </pa_dashboards>
