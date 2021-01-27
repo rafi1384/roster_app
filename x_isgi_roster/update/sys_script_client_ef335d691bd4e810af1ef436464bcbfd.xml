@@ -11,27 +11,46 @@
         <name>Start Date validation</name>
         <order>3</order>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
-	if (isLoading || newValue === '') {
-		return;
-	}
-	if (newValue!='' && g_form.getValue('end_date')!=''){
-		var gets = new GlideAjax('CompareDates');
-		gets.addParam('sysparm_name','getDValue');
-		gets.addParam('enddate', g_form.getValue('end_date'));
-		gets.addParam('startdate', newValue);
-		gets.getXMLAnswer(CompareDates);
-	}
+    if (isLoading || newValue === '') {
+        return;
+    }
 
-	function CompareDates(response){		
-		var dateObject=JSON.parse(response);
+    if (newValue != '') {
+        var getCurrentDate = new GlideAjax('CompareDates');
+        getCurrentDate.addParam('sysparm_name', 'getCurrentValue');
+        getCurrentDate.addParam('startdate', newValue);
+        getCurrentDate.getXMLAnswer(CompareDatesWithCurrent);
+    }
 
-		if (dateObject.end_date<dateObject.start_date){
-			g_form.clearValue('roster_start_date');
-			g_form.addErrorMessage('Start Date should be lesser than End Date.');
-			g_form.getControl('roster_start_date').focus();
-		}
+    if (newValue != '' && g_form.getValue('end_date') != '') {
+        var gets = new GlideAjax('CompareDates');
+        gets.addParam('sysparm_name', 'getDValue');
+        gets.addParam('enddate', g_form.getValue('end_date'));
+        gets.addParam('startdate', newValue);
+        gets.getXMLAnswer(CompareDates);
+    }
 
-	}
+    function CompareDatesWithCurrent(response) {
+        var dateObject = JSON.parse(response);
+
+        if (dateObject.current_date > dateObject.start_date) {
+            g_form.clearValue('roster_start_date');
+            g_form.addErrorMessage('Start Date should not be before today.');
+            g_form.getControl('roster_start_date').focus();
+        }
+
+    }
+
+    function CompareDates(response) {
+        var dateObject = JSON.parse(response);
+
+        if (dateObject.end_date < dateObject.start_date) {
+            g_form.clearValue('roster_start_date');
+            g_form.addErrorMessage('Start Date should be lesser than End Date.');
+            g_form.getControl('roster_start_date').focus();
+        }
+
+    }
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>mohamed.rafiulla@isg-one.com</sys_created_by>
@@ -40,7 +59,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ef335d691bd4e810af1ef436464bcbfd</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Start Date validation</sys_name>
         <sys_overrides/>
         <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
@@ -48,8 +67,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
         <sys_update_name>sys_script_client_ef335d691bd4e810af1ef436464bcbfd</sys_update_name>
-        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-        <sys_updated_on>2020-12-10 15:27:12</sys_updated_on>
+        <sys_updated_by>Padmalatha.Giridhar@isg-one.com</sys_updated_by>
+        <sys_updated_on>2021-01-27 07:36:20</sys_updated_on>
         <table>x_isgi_roster_plan</table>
         <type>onChange</type>
         <ui_type>10</ui_type>

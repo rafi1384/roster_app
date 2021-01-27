@@ -39,11 +39,8 @@
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
-        <reference_qual>active=true^roles=x_isgi_roster.slc^EQ</reference_qual>
-        <reference_qual_condition table="sys_user">active=true^roles=x_isgi_roster.slc^EQ<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
-            <item endquery="false" field="roles" goto="false" newquery="false" operator="=" or="false" value="x_isgi_roster.slc"/>
-            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
-        </reference_qual_condition>
+        <reference_qual>javascript:'active=true^roles=x_isgi_roster.slc^'+'sys_id!='+gs.getUserID()</reference_qual>
+        <reference_qual_condition/>
         <reference_type/>
         <sizeclass/>
         <spell_check>false</spell_check>
@@ -53,7 +50,7 @@
         <sys_created_on>2020-12-14 13:44:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>68c7e60a1b4da410af1ef436464bcb1f</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>Request to SLC</sys_name>
         <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
         <sys_policy/>
@@ -61,13 +58,13 @@
         <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
         <sys_update_name>sys_dictionary_x_isgi_roster_plan_to_slc</sys_update_name>
         <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-        <sys_updated_on>2020-12-14 13:45:53</sys_updated_on>
+        <sys_updated_on>2021-01-27 06:55:53</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
         <use_dependent_field>false</use_dependent_field>
         <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
+        <use_reference_qualifier>advanced</use_reference_qualifier>
         <virtual>false</virtual>
         <widget/>
         <write_roles/>

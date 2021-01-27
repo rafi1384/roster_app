@@ -37,7 +37,7 @@
         <element label="Fill Percentage" max_length="40" name="seat_fill_per" read_only="true" type="integer"/>
         <element attributes="encode_utf8=false" label="SLC" max_length="32" name="slc" read_only="true" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Team Name" mandatory="true" max_length="100" name="team_name" type="string"/>
-        <element attributes="encode_utf8=false" label="Request to SLC" max_length="32" name="to_slc" reference="sys_user" reference_qual="active=true^roles=x_isgi_roster.slc^EQ" reference_qual_condition="active=true^roles=x_isgi_roster.slc^EQ" type="reference"/>
+        <element attributes="encode_utf8=false" label="Request to SLC" max_length="32" name="to_slc" reference="sys_user" reference_qual="javascript:'active=true^roles=x_isgi_roster.slc^'+'sys_id!='+gs.getUserID()" type="reference" use_reference_qualifier="advanced"/>
         <element active="false" attributes="edge_encryption_enabled=true" choice="1" label="Type" max_length="40" name="type" type="string">
             <choice>
                 <element inactive_on_update="false" label="Fixed Seat" sequence="0" value="1"/>

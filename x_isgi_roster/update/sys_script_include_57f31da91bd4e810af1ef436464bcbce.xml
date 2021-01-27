@@ -9,23 +9,39 @@
         <name>CompareDates</name>
         <script><![CDATA[var CompareDates = Class.create();
 CompareDates.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
-	
-	getDValue:function(){
-		var dateObject={};
-		var start_date=this.getParameter('startdate');
-		var end_date=this.getParameter('enddate');
-	
 
-		var sd = new GlideDateTime();
-		sd.setDisplayValue(start_date);
-		dateObject.start_date=sd.getNumericValue();
+    getDValue: function() {
+        var dateObject = {};
+        var start_date = this.getParameter('startdate');
+        var end_date = this.getParameter('enddate');
 
-		var ed = new GlideDateTime();
-		ed.setDisplayValue(end_date);
-		dateObject.end_date=ed.getNumericValue();
 
-		return JSON.stringify(dateObject);
-	},
+        var sd = new GlideDateTime();
+        sd.setDisplayValue(start_date);
+        dateObject.start_date = sd.getNumericValue();
+
+        var ed = new GlideDateTime();
+        ed.setDisplayValue(end_date);
+        dateObject.end_date = ed.getNumericValue();
+
+        return JSON.stringify(dateObject);
+    },
+
+    getCurrentValue: function() {
+        var dateObject = {};
+        var start_date = this.getParameter('startdate');
+        var current_date = new GlideDate();
+
+        var sd = new GlideDateTime();
+        sd.setDisplayValue(start_date);
+        dateObject.start_date = sd.getNumericValue();
+
+        var ed = new GlideDateTime();
+        ed.setDisplayValue(current_date);
+        dateObject.current_date = ed.getNumericValue();
+
+        return JSON.stringify(dateObject);
+    },
 
     type: 'CompareDates'
 });]]></script>
@@ -34,14 +50,14 @@ CompareDates.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_on>2020-11-05 11:34:17</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>57f31da91bd4e810af1ef436464bcbce</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>CompareDates</sys_name>
         <sys_package display_value="roster" source="x_isgi_roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_package>
         <sys_policy>read</sys_policy>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="roster">3f44a5b11b739c149d4e6392f54bcbbf</sys_scope>
         <sys_update_name>sys_script_include_57f31da91bd4e810af1ef436464bcbce</sys_update_name>
-        <sys_updated_by>mohamed.rafiulla@isg-one.com</sys_updated_by>
-        <sys_updated_on>2020-11-05 11:34:30</sys_updated_on>
+        <sys_updated_by>Nitesh.Garg@isg-one.com</sys_updated_by>
+        <sys_updated_on>2021-01-27 07:10:15</sys_updated_on>
     </sys_script_include>
 </record_update>
